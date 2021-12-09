@@ -13,11 +13,7 @@
       "skill2": "React.js",
       "skill3": "JavaScript",
       "skill4": "Git",
-      "skill5": "Frontend Development",
-      "skill6": "TypeScript",
-      "skill7": "Kubernetes",
-      "skill8": "HTML",
-      "skill9": "Webpack"
+      "skill5": "Frontend Development"
     }
   },
   {
@@ -31,15 +27,11 @@
     "workExperience": "5 - 10 years of experience - Senior",
     "salaryRange": "GAS €45.000 - €70.000",
     "skills": {
-      "skill1": "Frontend Development",
-      "skill2": "",
+      "skill1": "",
+      "skill2": "Frontend Development",
       "skill3": "JavaScript",
       "skill4": "HTML",
-      "skill5": "CSS",
-      "skill6": "TypeScript",
-      "skill7": "React.js",
-      "skill8": "",
-      "skill9": ""
+      "skill5": "CSS"
     }
   },
   {
@@ -52,15 +44,11 @@
     "workExperience": "At least 6 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "HTML",
+      "skill1": "",
       "skill2": "React.js",
       "skill3": "JavaScript",
-      "skill4": "",
-      "skill5": "CSS",
-      "skill6": "Kanban",
-      "skill7": "",
-      "skill8": "REST APIs",
-      "skill9": ""
+      "skill4": "HTML",
+      "skill5": "CSS"
     }
   },
   {
@@ -74,14 +62,10 @@
     "salaryRange": "",
     "skills": {
       "skill1": "",
-      "skill2": "",
-      "skill3": "JavaScript",
+      "skill2": "JavaScript",
+      "skill3": "CSS",
       "skill4": "HTML",
-      "skill5": "Jasmine",
-      "skill6": "CSS",
-      "skill7": "React.js",
-      "skill8": "",
-      "skill9": "ECMAScript"
+      "skill5": "ECMAScript"
     }
   }
 ]

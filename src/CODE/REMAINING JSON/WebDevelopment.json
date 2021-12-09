@@ -9,15 +9,11 @@
     "workExperience": "3 - 10 years of experience",
     "salaryRange": "GAS €55.000 - €70.000",
     "skills": {
-      "skill1": "Node.js",
+      "skill1": "",
       "skill2": "React.js",
       "skill3": "JavaScript",
       "skill4": "Git",
-      "skill5": "Web Development",
-      "skill6": "TypeScript",
-      "skill7": "Kubernetes",
-      "skill8": "HTML",
-      "skill9": "Webpack"
+      "skill5": "Node.js"
     }
   },
   {
@@ -30,15 +26,11 @@
     "workExperience": "5 - 10 years of experience - Senior",
     "salaryRange": "GAS €45.000 - €70.000",
     "skills": {
-      "skill1": "Web Development",
-      "skill2": "Python",
-      "skill3": "JavaScript",
-      "skill4": "HTML",
-      "skill5": "CSS",
-      "skill6": "TypeScript",
-      "skill7": "React.js",
-      "skill8": "Node.js",
-      "skill9": ""
+      "skill1": "",
+      "skill2": "React JS",
+      "skill3": "Python",
+      "skill4": "JavaScript",
+      "skill5": "Node JS"
     }
   },
   {
@@ -51,36 +43,28 @@
     "workExperience": "At least 6 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "HTML",
+      "skill1": "",
       "skill2": "React.js",
       "skill3": "JavaScript",
       "skill4": "Node.js",
-      "skill5": "CSS",
-      "skill6": "Kanban",
-      "skill7": "Web Development",
-      "skill8": "REST APIs",
-      "skill9": "Python"
+      "skill5": "CSS"
     }
   },
   {
     "id": 3,
     "image": "https://assets.landing.jobs/attachments/companies/logos/198e65739d9a809847df261e357ab3ef3adf3cd2/small.jpg?1629735425",
-    "position": "Senior Web Engineer",
+    "position": "Senior Web Developer",
     "status": "Permanent",
     "company": "Wolters Kluwer / Basecone",
     "location": "",
     "workExperience": "8 - 10 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "Web Development",
-      "skill2": "Node.js",
-      "skill3": "JavaScript",
+      "skill1": "",
+      "skill2": "Web Development",
+      "skill3": "Node.js",
       "skill4": "HTML",
-      "skill5": "Jasmine",
-      "skill6": "CSS",
-      "skill7": "React.js",
-      "skill8": "Python",
-      "skill9": "ECMAScript"
+      "skill5": "Jasmine"
     }
   }
 ]

@@ -9,15 +9,11 @@
     "workExperience": "3 - 10 years of experience",
     "salaryRange": "GAS €55.000 - €70.000",
     "skills": {
-      "skill1": "MySQL",
-      "skill2": "Node.js",
-      "skill3": "JavaScript",
-      "skill4": "Git",
-      "skill5": "Docker",
-      "skill6": "TypeScript",
-      "skill7": "Kubernetes",
-      "skill8": "C++",
-      "skill9": "Webpack"
+      "skill1": "",
+      "skill2": "C",
+      "skill3": "Git",
+      "skill4": "C++",
+      "skill5": "Docker"
     }
   },
   {
@@ -31,14 +27,10 @@
     "salaryRange": "GAS €45.000 - €70.000",
     "skills": {
       "skill1": "",
-      "skill2": "",
-      "skill3": "JavaScript",
+      "skill2": "Unity",
+      "skill3": "OS",
       "skill4": "C++",
-      "skill5": "C++ Development",
-      "skill6": "TypeScript",
-      "skill7": "Node.js",
-      "skill8": "",
-      "skill9": ""
+      "skill5": "C++ Development"
     }
   },
   {
@@ -51,15 +43,11 @@
     "workExperience": "At least 6 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "C++",
-      "skill2": "Node.js",
-      "skill3": "JavaScript",
+      "skill1": "",
+      "skill2": "C",
+      "skill3": "C++",
       "skill4": "SEO",
-      "skill5": "C++ Development",
-      "skill6": "Kanban",
-      "skill7": "Node.js",
-      "skill8": "REST APIs",
-      "skill9": ""
+      "skill5": "C++ Development"
     }
   },
   {
@@ -72,15 +60,11 @@
     "workExperience": "8 - 10 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "C++",
-      "skill2": "Scrum",
-      "skill3": "JavaScript",
+      "skill1": "",
+      "skill2": "C++",
+      "skill3": "Scrum",
       "skill4": "C++ Development",
-      "skill5": "Jasmine",
-      "skill6": "",
-      "skill7": "Node.js",
-      "skill8": "",
-      "skill9": "ECMAScript"
+      "skill5": "Jasmine"
     }
   }
 ]

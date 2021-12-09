@@ -9,15 +9,11 @@
     "workExperience": "3 - 10 years of experience",
     "salaryRange": "GAS €55.000 - €70.000",
     "skills": {
-      "skill1": "MySQL",
-      "skill2": "Node.js",
-      "skill3": "JavaScript",
-      "skill4": "Git",
-      "skill5": "Docker",
-      "skill6": "TypeScript",
-      "skill7": "Kubernetes",
-      "skill8": "Angular",
-      "skill9": "Webpack"
+      "skill1": "",
+      "skill2": "JavaScript",
+      "skill3": "TypeScript",
+      "skill4": "Angular",
+      "skill5": "Git"
     }
   },
   {
@@ -31,14 +27,10 @@
     "salaryRange": "GAS €45.000 - €70.000",
     "skills": {
       "skill1": "",
-      "skill2": "",
-      "skill3": "JavaScript",
-      "skill4": "",
-      "skill5": "Frontend Development",
-      "skill6": "TypeScript",
-      "skill7": "Vue.js",
-      "skill8": "",
-      "skill9": ""
+      "skill2": "JavaScript",
+      "skill3": "Frontend Development",
+      "skill4": "DOM",
+      "skill5": "HTML"
     }
   },
   {
@@ -51,15 +43,11 @@
     "workExperience": "At least 6 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "SCRUM",
-      "skill2": "Node.js",
+      "skill1": "",
+      "skill2": "SCRUM",
       "skill3": "JavaScript",
       "skill4": "SEO",
-      "skill5": "Frontend Development",
-      "skill6": "Kanban",
-      "skill7": "Vue.js",
-      "skill8": "REST APIs",
-      "skill9": ""
+      "skill5": "Frontend Development"
     }
   },
   {
@@ -72,20 +60,16 @@
     "workExperience": "At least 4 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "MongoDB",
-      "skill2": "Node.js",
+      "skill1": "",
+      "skill2": "MongoDB",
       "skill3": "TypeScript",
-      "skill4": "Frontend Development",
-      "skill5": "PostgreSQL",
-      "skill6": "JIRA",
-      "skill7": "Backend Development",
-      "skill8": "Angular",
-      "skill9": "Docker"
+      "skill4": "Node.js",
+      "skill5": "PostgreSQL"
     }
   },
   {
     "id": 4,
-    "image" : "https://assets.landing.jobs/attachments/companies/logos/1fcb7bb642e319b6fdefe9ec7292caef4f40b3bb/small.png?1438101938",
+    "image": "https://assets.landing.jobs/attachments/companies/logos/1fcb7bb642e319b6fdefe9ec7292caef4f40b3bb/small.png?1438101938",
     "position": "Front End Developer - Fight Covid-19!",
     "status": "Permanent",
     "company": "ITClinical",
@@ -93,20 +77,16 @@
     "workExperience": "3 - 10 years of experience - Intermediate",
     "salaryRange": "GAS €25.000 - €45.000",
     "skills": {
-      "skill1": "CSS",
-      "skill2": "jQuery",
+      "skill1": "",
+      "skill2": "CSS",
       "skill3": "User Interface Design",
       "skill4": "HTML",
-      "skill5": "JavaScript",
-      "skill6": "Test Driven Development",
-      "skill7": "Frontend Development",
-      "skill8": "Apache Maven",
-      "skill9": "React"
+      "skill5": "JavaScript"
     }
   },
   {
     "id": 5,
-    "image" : "https://assets.landing.jobs/attachments/companies/logos/da0aa42d9743dc0d03c7cfa9427d2208180759f9/small.png?1613402158",
+    "image": "https://assets.landing.jobs/attachments/companies/logos/da0aa42d9743dc0d03c7cfa9427d2208180759f9/small.png?1613402158",
     "position": "Product Front-end Developer (Junior)",
     "status": "Permanent",
     "company": "Cloudoki",
@@ -115,14 +95,10 @@
     "salaryRange": "",
     "skills": {
       "skill1": "",
-      "skill2": "",
-      "skill3": "JavaScript",
-      "skill4": "Frontend Development",
-      "skill5": "Continuous Integration",
-      "skill6": "React",
-      "skill7": "Behavious-Driven Development",
-      "skill8": "",
-      "skill9": ""
+      "skill2": "JavaScript",
+      "skill3": "Frontend Development",
+      "skill4": "Continuous Integration",
+      "skill5": "React Native"
     }
   },
   {
@@ -135,15 +111,11 @@
     "workExperience": "8 - 10 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "C++",
-      "skill2": "Scrum",
+      "skill1": "",
+      "skill2": "DOM",
       "skill3": "JavaScript",
       "skill4": "Frontend Development",
-      "skill5": "Jasmine",
-      "skill6": "React",
-      "skill7": "Vue.js",
-      "skill8": "Angular",
-      "skill9": "ECMAScript"
+      "skill5": "Jasmine"
     }
   },
   {
@@ -156,15 +128,11 @@
     "workExperience": "At least 5 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "API",
-      "skill2": "Software Enigeering",
+      "skill1": "",
+      "skill2": "API",
       "skill3": "JavaScript",
-      "skill4": "SQL Server",
-      "skill5": "Visual Design",
-      "skill6": "Frontend Development",
-      "skill7": "Application Development",
-      "skill8": "Network Security",
-      "skill9": ""
+      "skill4": "Software Enigeering",
+      "skill5": "Visual Design"
     }
   }
 ]

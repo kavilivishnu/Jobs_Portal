@@ -13,11 +13,7 @@
       "skill2": "Node.js",
       "skill3": "JavaScript",
       "skill4": "Git",
-      "skill5": "Docker",
-      "skill6": "TypeScript",
-      "skill7": "Kubernetes",
-      "skill8": "",
-      "skill9": "Webpack"
+      "skill5": "Docker"
     }
   },
   {
@@ -31,14 +27,10 @@
     "salaryRange": "GAS €45.000 - €70.000",
     "skills": {
       "skill1": "",
-      "skill2": "",
-      "skill3": "JavaScript",
-      "skill4": "",
-      "skill5": "Backend Development",
-      "skill6": "TypeScript",
-      "skill7": "Node.js",
-      "skill8": "",
-      "skill9": ""
+      "skill2": "Backend Development",
+      "skill3": "PHP",
+      "skill4": "Python",
+      "skill5": "JavaScript"
     }
   },
   {
@@ -51,15 +43,11 @@
     "workExperience": "At least 6 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "SCRUM",
+      "skill1": "",
       "skill2": "Node.js",
       "skill3": "JavaScript",
       "skill4": "SEO",
-      "skill5": "Backend Development",
-      "skill6": "Kanban",
-      "skill7": "Node.js",
-      "skill8": "REST APIs",
-      "skill9": ""
+      "skill5": "Backend Development"
     }
   },
   {
@@ -72,15 +60,11 @@
     "workExperience": "At least 4 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "MongoDB",
+      "skill1": "",
       "skill2": "Node.js",
       "skill3": "TypeScript",
       "skill4": "Backend Development",
-      "skill5": "PostgreSQL",
-      "skill6": "JIRA",
-      "skill7": "Backend Development",
-      "skill8": "",
-      "skill9": "Docker"
+      "skill5": "PostgreSQL"
     }
   },
   {
@@ -95,13 +79,9 @@
     "skills": {
       "skill1": "",
       "skill2": "jQuery",
-      "skill3": "",
+      "skill3": "Mongo DB",
       "skill4": "HTML",
-      "skill5": "JavaScript",
-      "skill6": "Test Driven Development",
-      "skill7": "Backend Development",
-      "skill8": "Apache Maven",
-      "skill9": "MongoDB"
+      "skill5": "JavaScript"
     }
   },
   {
@@ -115,14 +95,10 @@
     "salaryRange": "",
     "skills": {
       "skill1": "",
-      "skill2": "",
-      "skill3": "JavaScript",
-      "skill4": "Backend Development",
-      "skill5": "Continuous Integration",
-      "skill6": "",
-      "skill7": "Behavious-Driven Development",
-      "skill8": "",
-      "skill9": ""
+      "skill2": "Backend Development",
+      "skill3": "Continuous Integration",
+      "skill4": "Behavious-Driven Development",
+      "skill5": "Mongo DB"
     }
   },
   {
@@ -135,15 +111,11 @@
     "workExperience": "8 - 10 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "C++",
-      "skill2": "Scrum",
+      "skill1": "",
+      "skill2": "C++",
       "skill3": "JavaScript",
       "skill4": "Backend Development",
-      "skill5": "Jasmine",
-      "skill6": "",
-      "skill7": "Node.js",
-      "skill8": "",
-      "skill9": "ECMAScript"
+      "skill5": "Jasmine"
     }
   },
   {
@@ -157,14 +129,10 @@
     "salaryRange": "",
     "skills": {
       "skill1": "API",
-      "skill2": "Software Enigeering",
-      "skill3": "JavaScript",
+      "skill2": "",
+      "skill3": "Software Enigeering",
       "skill4": "SQL Server",
-      "skill5": "Visual Design",
-      "skill6": "Backend Development",
-      "skill7": "Application Development",
-      "skill8": "Network Security",
-      "skill9": ""
+      "skill5": "Node"
     }
   }
 ]

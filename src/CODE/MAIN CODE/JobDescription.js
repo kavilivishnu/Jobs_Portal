@@ -19,12 +19,12 @@ function JobDescription() {
   const globalState = useSelector((state) => state);
 
   return (
-    <div>
+    <div style={{ marginTop: "5%" }}>
       {globalState.front ? (
         <div>
           {FrontendDev.map((items, id) => (
             <div key={id}>
-              <div style={{ display: "flex", flexDirection: "row" }}>
+              <div className="cardBackground">
                 <div>
                   <img
                     className="companyLogo"
@@ -50,16 +50,10 @@ function JobDescription() {
                   </p>
                   <p className="salaryRange">{items.salaryRange}</p>
                   <p>
-                    <span className="skill1">{items.skills.skill1}</span>
                     <span className="skill2">{items.skills.skill2}</span>
                     <span className="skill3">{items.skills.skill3}</span>
                     <span className="skill4">{items.skills.skill4}</span>
                     <span className="skill5">{items.skills.skill5}</span>
-                    <br />
-                    <span className="skill6">{items.skills.skill6}</span>
-                    <span className="skill7">{items.skills.skill7}</span>
-                    <span className="skill8">{items.skills.skill8}</span>
-                    <span className="skill9">{items.skills.skill9}</span>
                   </p>
                 </div>
               </div>
@@ -73,7 +67,7 @@ function JobDescription() {
               <div>
                 {FullStack.map((items, id) => (
                   <div key={id}>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="cardBackground">
                       <div>
                         <img
                           className="companyLogo"
@@ -99,16 +93,10 @@ function JobDescription() {
                         </p>
                         <p className="salaryRange">{items.salaryRange}</p>
                         <p>
-                          <span className="skill1">{items.skills.skill1}</span>
                           <span className="skill2">{items.skills.skill2}</span>
                           <span className="skill3">{items.skills.skill3}</span>
                           <span className="skill4">{items.skills.skill4}</span>
                           <span className="skill5">{items.skills.skill5}</span>
-                          <br />
-                          <span className="skill6">{items.skills.skill6}</span>
-                          <span className="skill7">{items.skills.skill7}</span>
-                          <span className="skill8">{items.skills.skill8}</span>
-                          <span className="skill9">{items.skills.skill9}</span>
                         </p>
                       </div>
                     </div>
@@ -124,7 +112,7 @@ function JobDescription() {
               <div>
                 {TechnologyLeaderShip.map((items, id) => (
                   <div key={id}>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="cardBackground">
                       <div>
                         <img
                           className="companyLogo"
@@ -150,16 +138,10 @@ function JobDescription() {
                         </p>
                         <p className="salaryRange">{items.salaryRange}</p>
                         <p>
-                          <span className="skill1">{items.skills.skill1}</span>
                           <span className="skill2">{items.skills.skill2}</span>
                           <span className="skill3">{items.skills.skill3}</span>
                           <span className="skill4">{items.skills.skill4}</span>
                           <span className="skill5">{items.skills.skill5}</span>
-                          <br />
-                          <span className="skill6">{items.skills.skill6}</span>
-                          <span className="skill7">{items.skills.skill7}</span>
-                          <span className="skill8">{items.skills.skill8}</span>
-                          <span className="skill9">{items.skills.skill9}</span>
                         </p>
                       </div>
                     </div>
@@ -175,7 +157,7 @@ function JobDescription() {
               <div>
                 {CSS.map((items, id) => (
                   <div key={id}>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="cardBackground">
                       <div>
                         <img
                           className="companyLogo"
@@ -201,16 +183,10 @@ function JobDescription() {
                         </p>
                         <p className="salaryRange">{items.salaryRange}</p>
                         <p>
-                          <span className="skill1">{items.skills.skill1}</span>
                           <span className="skill2">{items.skills.skill2}</span>
                           <span className="skill3">{items.skills.skill3}</span>
                           <span className="skill4">{items.skills.skill4}</span>
                           <span className="skill5">{items.skills.skill5}</span>
-                          <br />
-                          <span className="skill6">{items.skills.skill6}</span>
-                          <span className="skill7">{items.skills.skill7}</span>
-                          <span className="skill8">{items.skills.skill8}</span>
-                          <span className="skill9">{items.skills.skill9}</span>
                         </p>
                       </div>
                     </div>
@@ -226,7 +202,7 @@ function JobDescription() {
               <div>
                 {HTML.map((items, id) => (
                   <div key={id}>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="cardBackground">
                       <div>
                         <img
                           className="companyLogo"
@@ -252,16 +228,10 @@ function JobDescription() {
                         </p>
                         <p className="salaryRange">{items.salaryRange}</p>
                         <p>
-                          <span className="skill1">{items.skills.skill1}</span>
                           <span className="skill2">{items.skills.skill2}</span>
                           <span className="skill3">{items.skills.skill3}</span>
                           <span className="skill4">{items.skills.skill4}</span>
                           <span className="skill5">{items.skills.skill5}</span>
-                          <br />
-                          <span className="skill6">{items.skills.skill6}</span>
-                          <span className="skill7">{items.skills.skill7}</span>
-                          <span className="skill8">{items.skills.skill8}</span>
-                          <span className="skill9">{items.skills.skill9}</span>
                         </p>
                       </div>
                     </div>
@@ -277,7 +247,7 @@ function JobDescription() {
               <div>
                 {JavaScript.map((items, id) => (
                   <div key={id}>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="cardBackground">
                       <div>
                         <img
                           className="companyLogo"
@@ -303,16 +273,10 @@ function JobDescription() {
                         </p>
                         <p className="salaryRange">{items.salaryRange}</p>
                         <p>
-                          <span className="skill1">{items.skills.skill1}</span>
                           <span className="skill2">{items.skills.skill2}</span>
                           <span className="skill3">{items.skills.skill3}</span>
                           <span className="skill4">{items.skills.skill4}</span>
                           <span className="skill5">{items.skills.skill5}</span>
-                          <br />
-                          <span className="skill6">{items.skills.skill6}</span>
-                          <span className="skill7">{items.skills.skill7}</span>
-                          <span className="skill8">{items.skills.skill8}</span>
-                          <span className="skill9">{items.skills.skill9}</span>
                         </p>
                       </div>
                     </div>
@@ -328,7 +292,7 @@ function JobDescription() {
               <div>
                 {ReactJS.map((items, id) => (
                   <div key={id}>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="cardBackground">
                       <div>
                         <img
                           className="companyLogo"
@@ -354,16 +318,10 @@ function JobDescription() {
                         </p>
                         <p className="salaryRange">{items.salaryRange}</p>
                         <p>
-                          <span className="skill1">{items.skills.skill1}</span>
                           <span className="skill2">{items.skills.skill2}</span>
                           <span className="skill3">{items.skills.skill3}</span>
                           <span className="skill4">{items.skills.skill4}</span>
                           <span className="skill5">{items.skills.skill5}</span>
-                          <br />
-                          <span className="skill6">{items.skills.skill6}</span>
-                          <span className="skill7">{items.skills.skill7}</span>
-                          <span className="skill8">{items.skills.skill8}</span>
-                          <span className="skill9">{items.skills.skill9}</span>
                         </p>
                       </div>
                     </div>
@@ -379,7 +337,7 @@ function JobDescription() {
               <div>
                 {SoftwareDevelopment.map((items, id) => (
                   <div key={id}>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="cardBackground">
                       <div>
                         <img
                           className="companyLogo"
@@ -405,16 +363,10 @@ function JobDescription() {
                         </p>
                         <p className="salaryRange">{items.salaryRange}</p>
                         <p>
-                          <span className="skill1">{items.skills.skill1}</span>
                           <span className="skill2">{items.skills.skill2}</span>
                           <span className="skill3">{items.skills.skill3}</span>
                           <span className="skill4">{items.skills.skill4}</span>
                           <span className="skill5">{items.skills.skill5}</span>
-                          <br />
-                          <span className="skill6">{items.skills.skill6}</span>
-                          <span className="skill7">{items.skills.skill7}</span>
-                          <span className="skill8">{items.skills.skill8}</span>
-                          <span className="skill9">{items.skills.skill9}</span>
                         </p>
                       </div>
                     </div>
@@ -487,7 +439,7 @@ function JobDescription() {
               <div>
                 {FullStack.map((items, id) => (
                   <div key={id}>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="cardBackground">
                       <div>
                         <img
                           className="companyLogo"
@@ -512,17 +464,11 @@ function JobDescription() {
                           </span>
                         </p>
                         <p className="salaryRange">{items.salaryRange}</p>
-                        <p style={{ marginRight: "30px" }}>
-                          <span className="skill1">{items.skills.skill1}</span>
+                        <p className="skills">
                           <span className="skill2">{items.skills.skill2}</span>
                           <span className="skill3">{items.skills.skill3}</span>
                           <span className="skill4">{items.skills.skill4}</span>
                           <span className="skill5">{items.skills.skill5}</span>
-                          <br />
-                          <span className="skill6">{items.skills.skill6}</span>
-                          <span className="skill7">{items.skills.skill7}</span>
-                          <span className="skill8">{items.skills.skill8}</span>
-                          <span className="skill9">{items.skills.skill9}</span>
                         </p>
                       </div>
                     </div>
@@ -540,7 +486,7 @@ function JobDescription() {
               <div>
                 {TechnologyLeaderShip.map((items, id) => (
                   <div key={id}>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="cardBackground">
                       <div>
                         <img
                           className="companyLogo"
@@ -565,17 +511,14 @@ function JobDescription() {
                           </span>
                         </p>
                         <p className="salaryRange">{items.salaryRange}</p>
-                        <p>
-                          <span className="skill1">{items.skills.skill1}</span>
+                        <p className="skills">
                           <span className="skill2">{items.skills.skill2}</span>
                           <span className="skill3">{items.skills.skill3}</span>
                           <span className="skill4">{items.skills.skill4}</span>
                           <span className="skill5">{items.skills.skill5}</span>
+
                           <br />
-                          <span className="skill6">{items.skills.skill6}</span>
-                          <span className="skill7">{items.skills.skill7}</span>
-                          <span className="skill8">{items.skills.skill8}</span>
-                          <span className="skill9">{items.skills.skill9}</span>
+                          <br />
                         </p>
                       </div>
                     </div>
@@ -589,7 +532,7 @@ function JobDescription() {
           <div>
             {BackendDevelopment.map((items, id) => (
               <div key={id}>
-                <div style={{ display: "flex", flexDirection: "row" }}>
+                <div className="cardBackground">
                   <div>
                     <img
                       className="companyLogo"
@@ -615,16 +558,10 @@ function JobDescription() {
                     </p>
                     <p className="salaryRange">{items.salaryRange}</p>
                     <p>
-                      <span className="skill1">{items.skills.skill1}</span>
                       <span className="skill2">{items.skills.skill2}</span>
                       <span className="skill3">{items.skills.skill3}</span>
                       <span className="skill4">{items.skills.skill4}</span>
                       <span className="skill5">{items.skills.skill5}</span>
-                      <br />
-                      <span className="skill6">{items.skills.skill6}</span>
-                      <span className="skill7">{items.skills.skill7}</span>
-                      <span className="skill8">{items.skills.skill8}</span>
-                      <span className="skill9">{items.skills.skill9}</span>
                     </p>
                   </div>
                 </div>
@@ -636,7 +573,7 @@ function JobDescription() {
           <div>
             {C.map((items, id) => (
               <div key={id}>
-                <div style={{ display: "flex", flexDirection: "row" }}>
+                <div className="cardBackground">
                   <div>
                     <img
                       className="companyLogo"
@@ -662,16 +599,10 @@ function JobDescription() {
                     </p>
                     <p className="salaryRange">{items.salaryRange}</p>
                     <p>
-                      <span className="skill1">{items.skills.skill1}</span>
                       <span className="skill2">{items.skills.skill2}</span>
                       <span className="skill3">{items.skills.skill3}</span>
                       <span className="skill4">{items.skills.skill4}</span>
                       <span className="skill5">{items.skills.skill5}</span>
-                      <br />
-                      <span className="skill6">{items.skills.skill6}</span>
-                      <span className="skill7">{items.skills.skill7}</span>
-                      <span className="skill8">{items.skills.skill8}</span>
-                      <span className="skill9">{items.skills.skill9}</span>
                     </p>
                   </div>
                 </div>
@@ -683,7 +614,7 @@ function JobDescription() {
           <div>
             {CSharp.map((items, id) => (
               <div key={id}>
-                <div style={{ display: "flex", flexDirection: "row" }}>
+                <div className="cardBackground">
                   <div>
                     <img
                       className="companyLogo"
@@ -709,16 +640,10 @@ function JobDescription() {
                     </p>
                     <p className="salaryRange">{items.salaryRange}</p>
                     <p>
-                      <span className="skill1">{items.skills.skill1}</span>
                       <span className="skill2">{items.skills.skill2}</span>
                       <span className="skill3">{items.skills.skill3}</span>
                       <span className="skill4">{items.skills.skill4}</span>
                       <span className="skill5">{items.skills.skill5}</span>
-                      <br />
-                      <span className="skill6">{items.skills.skill6}</span>
-                      <span className="skill7">{items.skills.skill7}</span>
-                      <span className="skill8">{items.skills.skill8}</span>
-                      <span className="skill9">{items.skills.skill9}</span>
                     </p>
                   </div>
                 </div>
@@ -730,7 +655,7 @@ function JobDescription() {
           <div>
             {CPlusPlus.map((items, id) => (
               <div key={id}>
-                <div style={{ display: "flex", flexDirection: "row" }}>
+                <div className="cardBackground">
                   <div>
                     <img
                       className="companyLogo"
@@ -756,16 +681,10 @@ function JobDescription() {
                     </p>
                     <p className="salaryRange">{items.salaryRange}</p>
                     <p>
-                      <span className="skill1">{items.skills.skill1}</span>
                       <span className="skill2">{items.skills.skill2}</span>
                       <span className="skill3">{items.skills.skill3}</span>
                       <span className="skill4">{items.skills.skill4}</span>
                       <span className="skill5">{items.skills.skill5}</span>
-                      <br />
-                      <span className="skill6">{items.skills.skill6}</span>
-                      <span className="skill7">{items.skills.skill7}</span>
-                      <span className="skill8">{items.skills.skill8}</span>
-                      <span className="skill9">{items.skills.skill9}</span>
                     </p>
                   </div>
                 </div>
@@ -781,7 +700,7 @@ function JobDescription() {
               <div>
                 {CSS.map((items, id) => (
                   <div key={id}>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="cardBackground">
                       <div>
                         <img
                           className="companyLogo"
@@ -807,16 +726,10 @@ function JobDescription() {
                         </p>
                         <p className="salaryRange">{items.salaryRange}</p>
                         <p>
-                          <span className="skill1">{items.skills.skill1}</span>
                           <span className="skill2">{items.skills.skill2}</span>
                           <span className="skill3">{items.skills.skill3}</span>
                           <span className="skill4">{items.skills.skill4}</span>
                           <span className="skill5">{items.skills.skill5}</span>
-                          <br />
-                          <span className="skill6">{items.skills.skill6}</span>
-                          <span className="skill7">{items.skills.skill7}</span>
-                          <span className="skill8">{items.skills.skill8}</span>
-                          <span className="skill9">{items.skills.skill9}</span>
                         </p>
                       </div>
                     </div>
@@ -834,7 +747,7 @@ function JobDescription() {
               <div>
                 {HTML.map((items, id) => (
                   <div key={id}>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="cardBackground">
                       <div>
                         <img
                           className="companyLogo"
@@ -860,16 +773,10 @@ function JobDescription() {
                         </p>
                         <p className="salaryRange">{items.salaryRange}</p>
                         <p>
-                          <span className="skill1">{items.skills.skill1}</span>
                           <span className="skill2">{items.skills.skill2}</span>
                           <span className="skill3">{items.skills.skill3}</span>
                           <span className="skill4">{items.skills.skill4}</span>
                           <span className="skill5">{items.skills.skill5}</span>
-                          <br />
-                          <span className="skill6">{items.skills.skill6}</span>
-                          <span className="skill7">{items.skills.skill7}</span>
-                          <span className="skill8">{items.skills.skill8}</span>
-                          <span className="skill9">{items.skills.skill9}</span>
                         </p>
                       </div>
                     </div>
@@ -887,7 +794,7 @@ function JobDescription() {
               <div>
                 {JavaScript.map((items, id) => (
                   <div key={id}>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="cardBackground">
                       <div>
                         <img
                           className="companyLogo"
@@ -913,16 +820,10 @@ function JobDescription() {
                         </p>
                         <p className="salaryRange">{items.salaryRange}</p>
                         <p>
-                          <span className="skill1">{items.skills.skill1}</span>
                           <span className="skill2">{items.skills.skill2}</span>
                           <span className="skill3">{items.skills.skill3}</span>
                           <span className="skill4">{items.skills.skill4}</span>
                           <span className="skill5">{items.skills.skill5}</span>
-                          <br />
-                          <span className="skill6">{items.skills.skill6}</span>
-                          <span className="skill7">{items.skills.skill7}</span>
-                          <span className="skill8">{items.skills.skill8}</span>
-                          <span className="skill9">{items.skills.skill9}</span>
                         </p>
                       </div>
                     </div>
@@ -936,7 +837,7 @@ function JobDescription() {
           <div>
             {NodeJS.map((items, id) => (
               <div key={id}>
-                <div style={{ display: "flex", flexDirection: "row" }}>
+                <div className="cardBackground">
                   <div>
                     <img
                       className="companyLogo"
@@ -962,16 +863,10 @@ function JobDescription() {
                     </p>
                     <p className="salaryRange">{items.salaryRange}</p>
                     <p>
-                      <span className="skill1">{items.skills.skill1}</span>
                       <span className="skill2">{items.skills.skill2}</span>
                       <span className="skill3">{items.skills.skill3}</span>
                       <span className="skill4">{items.skills.skill4}</span>
                       <span className="skill5">{items.skills.skill5}</span>
-                      <br />
-                      <span className="skill6">{items.skills.skill6}</span>
-                      <span className="skill7">{items.skills.skill7}</span>
-                      <span className="skill8">{items.skills.skill8}</span>
-                      <span className="skill9">{items.skills.skill9}</span>
                     </p>
                   </div>
                 </div>
@@ -987,7 +882,7 @@ function JobDescription() {
               <div>
                 {ReactJS.map((items, id) => (
                   <div key={id}>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="cardBackground">
                       <div>
                         <img
                           className="companyLogo"
@@ -1013,16 +908,10 @@ function JobDescription() {
                         </p>
                         <p className="salaryRange">{items.salaryRange}</p>
                         <p>
-                          <span className="skill1">{items.skills.skill1}</span>
                           <span className="skill2">{items.skills.skill2}</span>
                           <span className="skill3">{items.skills.skill3}</span>
                           <span className="skill4">{items.skills.skill4}</span>
                           <span className="skill5">{items.skills.skill5}</span>
-                          <br />
-                          <span className="skill6">{items.skills.skill6}</span>
-                          <span className="skill7">{items.skills.skill7}</span>
-                          <span className="skill8">{items.skills.skill8}</span>
-                          <span className="skill9">{items.skills.skill9}</span>
                         </p>
                       </div>
                     </div>
@@ -1040,7 +929,7 @@ function JobDescription() {
               <div>
                 {SoftwareDevelopment.map((items, id) => (
                   <div key={id}>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="cardBackground">
                       <div>
                         <img
                           className="companyLogo"
@@ -1066,16 +955,10 @@ function JobDescription() {
                         </p>
                         <p className="salaryRange">{items.salaryRange}</p>
                         <p>
-                          <span className="skill1">{items.skills.skill1}</span>
                           <span className="skill2">{items.skills.skill2}</span>
                           <span className="skill3">{items.skills.skill3}</span>
                           <span className="skill4">{items.skills.skill4}</span>
                           <span className="skill5">{items.skills.skill5}</span>
-                          <br />
-                          <span className="skill6">{items.skills.skill6}</span>
-                          <span className="skill7">{items.skills.skill7}</span>
-                          <span className="skill8">{items.skills.skill8}</span>
-                          <span className="skill9">{items.skills.skill9}</span>
                         </p>
                       </div>
                     </div>
@@ -1089,7 +972,7 @@ function JobDescription() {
           <div>
             {WebDevelopment.map((items, id) => (
               <div key={id}>
-                <div style={{ display: "flex", flexDirection: "row" }}>
+                <div className="cardBackground">
                   <div>
                     <img
                       className="companyLogo"
@@ -1115,16 +998,10 @@ function JobDescription() {
                     </p>
                     <p className="salaryRange">{items.salaryRange}</p>
                     <p>
-                      <span className="skill1">{items.skills.skill1}</span>
                       <span className="skill2">{items.skills.skill2}</span>
                       <span className="skill3">{items.skills.skill3}</span>
                       <span className="skill4">{items.skills.skill4}</span>
                       <span className="skill5">{items.skills.skill5}</span>
-                      <br />
-                      <span className="skill6">{items.skills.skill6}</span>
-                      <span className="skill7">{items.skills.skill7}</span>
-                      <span className="skill8">{items.skills.skill8}</span>
-                      <span className="skill9">{items.skills.skill9}</span>
                     </p>
                   </div>
                 </div>

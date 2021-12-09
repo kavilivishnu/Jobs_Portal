@@ -9,15 +9,11 @@
     "workExperience": "At least 8 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "Python",
-      "skill2": "Software Development",
-      "skill3": "JavaScript",
+      "skill1": "",
+      "skill2": "Python",
+      "skill3": "Software Development",
       "skill4": "Team Management",
-      "skill5": "Team Leadership",
-      "skill6": "Frontend Development",
-      "skill7": "Backend Development",
-      "skill8": "React",
-      "skill9": "Google Cloud Platform"
+      "skill5": "Team Leadership"
     }
   }
 ]

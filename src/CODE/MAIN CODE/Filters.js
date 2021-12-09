@@ -77,43 +77,43 @@ function Filters() {
         dispatch(toggleFrontend());
         break;
       case "full":
-        dispatch(toggleFullStack())
+        dispatch(toggleFullStack());
         break;
       case "tech":
-        dispatch(toggleTechnology())
+        dispatch(toggleTechnology());
         break;
       case "back":
-        dispatch(toggleBackend())
+        dispatch(toggleBackend());
         break;
       case "cLanguage":
-        dispatch(toggleCLanguage())
+        dispatch(toggleCLanguage());
         break;
       case "cPlusPlus":
-        dispatch(toggleCPlusPlus())
+        dispatch(toggleCPlusPlus());
         break;
       case "cSharp":
-        dispatch(toggleCSharp())
+        dispatch(toggleCSharp());
         break;
       case "cSS":
-        dispatch(toggleCSs())
+        dispatch(toggleCSs());
         break;
       case "hTML":
-        dispatch(toggleHTml())
+        dispatch(toggleHTml());
         break;
       case "javaScript":
-        dispatch(toggleJavaScript())
+        dispatch(toggleJavaScript());
         break;
       case "nodeJs":
-        dispatch(toggleNodetJS())
+        dispatch(toggleNodetJS());
         break;
       case "reactJS":
-        dispatch(toggleReactJS())
+        dispatch(toggleReactJS());
         break;
       case "soft":
-        dispatch(toggleSoftDev())
+        dispatch(toggleSoftDev());
         break;
       case "web":
-        dispatch(toggleWebDev())
+        dispatch(toggleWebDev());
         break;
 
       default:
@@ -121,17 +121,13 @@ function Filters() {
     }
   };
 
-  // const handleCheck = () => {
-  //   dispatch(toggleFrontend());
-  //   console.log(globalState);
-  // };
-
   return (
     <div style={{ marginLeft: "5%", marginRight: "17%" }}>
       <div>
         <h4>Skills</h4>
         <p>{globalState.front}</p>
         <Select ref={inputRef} isMulti options={skills} />
+        <br />
         <button onClick={(e) => handleClick(e)}>Show Results</button>
         <br />
         <h5>With any skills:</h5>
@@ -154,52 +150,37 @@ function Filters() {
             {displayFrontEnd ? (
               <div style={{ display: "flex", flexDirection: "column" }}>
                 <div>
-                  <input
-                    type="checkbox"
-                    onClick={() => dispatch(toggleFullStack())}
-                  />{" "}
+                  <input type="checkbox" onClick={() => handleToggle("full")} />{" "}
                   <label>Full-stack Developer(4)</label>
                 </div>
                 <div>
-                  <input
-                    type="checkbox"
-                    onClick={() => dispatch(toggleTechnology())}
-                  />{" "}
+                  <input type="checkbox" onClick={() => handleToggle("tech")} />{" "}
                   <label>Technology Leadership (4)</label>
                 </div>
                 <div>
-                  <input
-                    type="checkbox"
-                    onClick={() => dispatch(toggleCSs())}
-                  />
+                  <input type="checkbox" onClick={() => handleToggle("cSS")} />
                   <label>CSS Development</label>
                 </div>
                 <div>
-                  <input
-                    type="checkbox"
-                    onClick={() => dispatch(toggleHTml())}
-                  />
+                  <input type="checkbox" onClick={() => handleToggle("hTML")} />
                   <label>HTML Development</label>
                 </div>
                 <div>
                   <input
                     type="checkbox"
-                    onClick={() => dispatch(toggleJavaScript())}
+                    onClick={() => handleToggle("javaScript")}
                   />
                   <label>JavaScript Development</label>
                 </div>
                 <div>
                   <input
                     type="checkbox"
-                    onClick={() => dispatch(toggleReactJS())}
+                    onClick={() => handleToggle("reactJS")}
                   />
                   <label>ReactJS Development</label>
                 </div>
                 <div>
-                  <input
-                    type="checkbox"
-                    onClick={() => dispatch(toggleSoftDev())}
-                  />
+                  <input type="checkbox" onClick={() => handleToggle("soft")} />
                   <label>Software Development</label>
                 </div>
               </div>
@@ -208,7 +189,7 @@ function Filters() {
                 <div>
                   <input
                     type="checkbox"
-                    onClick={() => dispatch(toggleBackend())}
+                    onClick={() => handleToggle("back")}
                     // onClick={(e) => handleCheck(e)}
                   />
                   <label> Backend Development</label>
@@ -216,79 +197,67 @@ function Filters() {
                 <div>
                   <input
                     type="checkbox"
-                    onClick={() => dispatch(toggleCLanguage())}
+                    onClick={() => handleToggle("cLanguage")}
                   />
                   <label>C Development</label>
                 </div>
                 <div>
                   <input
                     type="checkbox"
-                    onClick={() => dispatch(toggleCSharp())}
+                    onClick={() => handleToggle("cSharp")}
                   />
                   <label>C# Development</label>
                 </div>
                 <div>
                   <input
                     type="checkbox"
-                    onClick={() => dispatch(toggleCPlusPlus())}
+                    onClick={() => handleToggle("cPlusPlus")}
                   />
                   <label>C++ Development</label>
                 </div>
                 <div>
-                  <input
-                    type="checkbox"
-                    onClick={() => dispatch(toggleCSs())}
-                  />
+                  <input type="checkbox" onClick={() => handleToggle("cSS")} />
                   <label>CSS Development</label>
                 </div>
                 <div>
-                  <input
-                    type="checkbox"
-                    onClick={() => dispatch(toggleHTml())}
-                  />
+                  <input type="checkbox" onClick={() => handleToggle("hTML")} />
                   <label>HTML Development</label>
                 </div>
                 <div></div>
                 <div>
                   <input
                     type="checkbox"
-                    onClick={() => dispatch(toggleJavaScript())}
+                    onClick={() => handleToggle("javaScript")}
                   />
                   <label>JavaScript Development</label>
                 </div>
                 <div>
                   <input
                     type="checkbox"
-                    onClick={() => dispatch(toggleNodetJS())}
+                    onClick={() => handleToggle("nodeJs")}
                   />
                   <label>NodeJS Development</label>
                 </div>
                 <div>
                   <input
                     type="checkbox"
-                    onClick={() => dispatch(toggleReactJS())}
+                    onClick={() => handleToggle("reactJS")}
                   />
                   <label>ReactJS Development</label>
                 </div>
                 <div>
-                  <input
-                    type="checkbox"
-                    onClick={() => dispatch(toggleSoftDev())}
-                  />
+                  <input type="checkbox" onClick={() => handleToggle("soft")} />
                   <label>Software Development</label>
                 </div>
                 <div>
-                  <input
-                    type="checkbox"
-                    onClick={() => dispatch(toggleWebDev())}
-                  />
+                  <input type="checkbox" onClick={() => handleToggle("web")} />
                   <label>Web Development</label>
                 </div>
               </div>
             )}
           </div>
         ) : (
-          <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex", flexDirection: "column", marginLeft: "-15%" }}>
             <div>
               <input
                 type="checkbox"
@@ -316,10 +285,11 @@ function Filters() {
               <label>Technology Leadership (4)</label>
             </div>
             <div>
-              <input type="checkbox" 
-              // onClick={() => dispatch(toggleCSs())}
-              onClick={() => handleToggle("cSS")}
-               />
+              <input
+                type="checkbox"
+                // onClick={() => dispatch(toggleCSs())}
+                onClick={() => handleToggle("cSS")}
+              />
               <label>CSS Development</label>
             </div>
             <div>
@@ -334,17 +304,11 @@ function Filters() {
               <label>JavaScript Development</label>
             </div>
             <div>
-              <input
-                type="checkbox"
-                onClick={() => handleToggle("reactJS")}
-              />
+              <input type="checkbox" onClick={() => handleToggle("reactJS")} />
               <label>ReactJS Development</label>
             </div>
             <div>
-              <input
-                type="checkbox"
-                onClick={() => handleToggle("soft")}
-              />
+              <input type="checkbox" onClick={() => handleToggle("soft")} />
               <label>Software Development</label>
             </div>
             <div>
@@ -374,10 +338,7 @@ function Filters() {
               <label>C++ Development</label>
             </div>
             <div>
-              <input
-                type="checkbox"
-                onClick={() => handleToggle("nodeJs")}
-              />
+              <input type="checkbox" onClick={() => handleToggle("nodeJs")} />
               <label>NodeJS Development</label>
             </div>
             <div>
