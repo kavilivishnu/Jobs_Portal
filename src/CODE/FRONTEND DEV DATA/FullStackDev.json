@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "image" : "https://assets.landing.jobs/attachments/companies/logos/da0aa42d9743dc0d03c7cfa9427d2208180759f9/small.png?1613402158",
+    "position": "Product Full-Stack Developer",
+    "status": "Permanent",
+    "company": "Cloudoki",
+    "location": "Lisbon, Portugal",
+    "workExperience": "At least 2 years of experience - Intermediate",
+    "salaryRange": "GAS €25.000 - €50.000",
+    "skills": {
+      "skill1": "",
+      "skill2": "Node.js",
+      "skill3": "JavaScript",
+      "skill4": "Frontend Development",
+      "skill5": "Backend Development",
+      "skill6": "React",
+      "skill7": "",
+      "skill8": "",
+      "skill9": ""
+    }
+  },
+  {
+    "id": 1,
+    "image" : "https://assets.landing.jobs/attachments/companies/logos/b5c9052fc25948496e4477fe5fdc1691bcb3020c/small.png?1619200027",
+    "position": "Senior Fullstack Engineer",
+    "status": "Permanent",
+    "company": "FARO Technologies",
+    "location": "Porto, Portugal",
+    "workExperience": "5 - 10 years of experience - Senior",
+    "salaryRange": "",
+    "skills": {
+      "skill1": "C++",
+      "skill2": "Test Driven Development",
+      "skill3": "",
+      "skill4": "",
+      "skill5": "Frontend Development",
+      "skill6": "OOP",
+      "skill7": "solid",
+      "skill8": "",
+      "skill9": ""
+    }
+  }
+]

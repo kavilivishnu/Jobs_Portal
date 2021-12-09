@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "image" : "https://assets.landing.jobs/attachments/companies/logos/872a4e591cb27452a5206abf971c05619050eb5c/small.png?1600166957",
+    "position": "Engineering Manager",
+    "status": "Permanent",
+    "company": "Beyond",
+    "location": "Lisbon, Portugal",
+    "workExperience": "At least 8 years of experience - Senior",
+    "salaryRange": "",
+    "skills": {
+      "skill1": "Pyhton",
+      "skill2": "Software Development",
+      "skill3": "JavaScript",
+      "skill4": "Team Management",
+      "skill5": "Team Leadership",
+      "skill6": "Frontend Development",
+      "skill7": "Backend Development",
+      "skill8": "React",
+      "skill9": "Google Cloud Platform"
+    }
+  }
+]

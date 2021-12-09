@@ -1,0 +1,15 @@
+[
+  { "id": 0, "skill": "HTML" },
+  { "id": 1, "skill": "CSS" },
+  { "id": 2, "skill": "HTML" },
+  { "id": 3, "skill": "JavaScript" },
+  { "id": 4, "skill": "React JS" },
+  { "id": 5, "skill": "Node.JS" },
+  { "id": 6, "skill": "C" },
+  { "id": 7, "skill": "C++" },
+  { "id": 8, "skill": "C#" },
+  { "id": 9, "skill": "Frontend Developement" },
+  { "id": 10, "skill": "Backend Developement" },
+  { "id": 11, "skill": "Software Developer" },
+  { "id": 12, "skill": "Web Developer" }
+]

@@ -1,38 +1,50 @@
 .App {
-  text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.position {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-right: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.status {
+  color: rgb(167, 166, 166);
+  /* font-family: bolder; */
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.location {
 }
 
-.App-link {
-  color: #61dafb;
+.workExperience {
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.salaryRange {
+}
+
+.skill1 {
+}
+
+.skill2 {
+}
+
+.skill3 {
+}
+
+.skill4 {
+}
+
+.skill5 {
+}
+
+.skill6 {
+}
+
+.skill7 {
+}
+
+.skill8 {
+}
+
+.skill9 {
 }
