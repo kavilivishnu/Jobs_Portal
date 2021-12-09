@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "image" : "https://assets.landing.jobs/attachments/companies/logos/872a4e591cb27452a5206abf971c05619050eb5c/small.png?1600166957",
+    "image": "https://assets.landing.jobs/attachments/companies/logos/872a4e591cb27452a5206abf971c05619050eb5c/small.png?1600166957",
     "position": "Engineering Manager",
     "status": "Permanent",
     "company": "Beyond",
@@ -9,7 +9,7 @@
     "workExperience": "At least 8 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "Pyhton",
+      "skill1": "Python",
       "skill2": "Software Development",
       "skill3": "JavaScript",
       "skill4": "Team Management",

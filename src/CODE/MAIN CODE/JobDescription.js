@@ -24,59 +24,94 @@ function JobDescription() {
         <div>
           {FrontendDev.map((items, id) => (
             <div key={id}>
-              <p>
-                <img src={items.image} alt="nothing" />
-                <span className="position"> {items.position}</span>
-                <span className="status">
-                  {" "}
-                  <span style={{ marginRight: "15px" }}>|</span> {items.status}
-                </span>
-              </p>
-              <p className="company">{items.company}</p>
-              <p className="location">{items.location}</p>
-              <p className="workExperience">{items.workExperience}</p>
-              <p className="salaryRange">{items.salaryRange}</p>
-              <p className="skill1">{items.skills.skill1}</p>
-              <p className="skill2">{items.skills.skill2}</p>
-              <p className="skill3">{items.skills.skill3}</p>
-              <p className="skill4">{items.skills.skill4}</p>
-              <p className="skill5">{items.skills.skill5}</p>
-              <p className="skill6">{items.skills.skill6}</p>
-              <p className="skill7">{items.skills.skill7}</p>
-              <p className="skill8">{items.skills.skill8}</p>
-              <p className="skill9">{items.skills.skill9}</p>
+              <div style={{ display: "flex", flexDirection: "row" }}>
+                <div>
+                  <img
+                    className="companyLogo"
+                    src={items.image}
+                    alt="nothing"
+                  />
+                </div>
+                <div>
+                  <p>
+                    <span className="position"> {items.position}</span>
+                    <span className="status">
+                      {" "}
+                      <span style={{ marginRight: "15px" }}>|</span>{" "}
+                      {items.status}
+                    </span>
+                  </p>
+                  <p>
+                    <span className="company">{items.company}</span>
+                    <span className="location">{items.location}</span>
+                    <span className="workExperience">
+                      {items.workExperience}
+                    </span>
+                  </p>
+                  <p className="salaryRange">{items.salaryRange}</p>
+                  <p>
+                    <span className="skill1">{items.skills.skill1}</span>
+                    <span className="skill2">{items.skills.skill2}</span>
+                    <span className="skill3">{items.skills.skill3}</span>
+                    <span className="skill4">{items.skills.skill4}</span>
+                    <span className="skill5">{items.skills.skill5}</span>
+                    <br />
+                    <span className="skill6">{items.skills.skill6}</span>
+                    <span className="skill7">{items.skills.skill7}</span>
+                    <span className="skill8">{items.skills.skill8}</span>
+                    <span className="skill9">{items.skills.skill9}</span>
+                  </p>
+                </div>
+              </div>
               <br />
               <br />
             </div>
           ))}
-          {/* ------------------pasting here the updated */}
+          {/* ------------------pasting here the updated logic */}
           <div>
             {globalState.full ? (
               <div>
                 {FullStack.map((items, id) => (
                   <div key={id}>
-                    <p>
-                      <img src={items.image} alt="nothing" />
-                      <span className="position"> {items.position}</span>
-                      <span className="status">
-                        {" "}
-                        <span style={{ marginRight: "15px" }}>|</span>{" "}
-                        {items.status}
-                      </span>
-                    </p>
-                    <p className="company">{items.company}</p>
-                    <p className="location">{items.location}</p>
-                    <p className="workExperience">{items.workExperience}</p>
-                    <p className="salaryRange">{items.salaryRange}</p>
-                    <p className="skill1">{items.skills.skill1}</p>
-                    <p className="skill2">{items.skills.skill2}</p>
-                    <p className="skill3">{items.skills.skill3}</p>
-                    <p className="skill4">{items.skills.skill4}</p>
-                    <p className="skill5">{items.skills.skill5}</p>
-                    <p className="skill6">{items.skills.skill6}</p>
-                    <p className="skill7">{items.skills.skill7}</p>
-                    <p className="skill8">{items.skills.skill8}</p>
-                    <p className="skill9">{items.skills.skill9}</p>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div>
+                        <img
+                          className="companyLogo"
+                          src={items.image}
+                          alt="nothing"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <span className="position"> {items.position}</span>
+                          <span className="status">
+                            {" "}
+                            <span style={{ marginRight: "15px" }}>|</span>{" "}
+                            {items.status}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="company">{items.company}</span>
+                          <span className="location">{items.location}</span>
+                          <span className="workExperience">
+                            {items.workExperience}
+                          </span>
+                        </p>
+                        <p className="salaryRange">{items.salaryRange}</p>
+                        <p>
+                          <span className="skill1">{items.skills.skill1}</span>
+                          <span className="skill2">{items.skills.skill2}</span>
+                          <span className="skill3">{items.skills.skill3}</span>
+                          <span className="skill4">{items.skills.skill4}</span>
+                          <span className="skill5">{items.skills.skill5}</span>
+                          <br />
+                          <span className="skill6">{items.skills.skill6}</span>
+                          <span className="skill7">{items.skills.skill7}</span>
+                          <span className="skill8">{items.skills.skill8}</span>
+                          <span className="skill9">{items.skills.skill9}</span>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                   </div>
@@ -89,28 +124,45 @@ function JobDescription() {
               <div>
                 {TechnologyLeaderShip.map((items, id) => (
                   <div key={id}>
-                    <p>
-                      <img src={items.image} alt="nothing" />
-                      <span className="position"> {items.position}</span>
-                      <span className="status">
-                        {" "}
-                        <span style={{ marginRight: "15px" }}>|</span>{" "}
-                        {items.status}
-                      </span>
-                    </p>
-                    <p className="company">{items.company}</p>
-                    <p className="location">{items.location}</p>
-                    <p className="workExperience">{items.workExperience}</p>
-                    <p className="salaryRange">{items.salaryRange}</p>
-                    <p className="skill1">{items.skills.skill1}</p>
-                    <p className="skill2">{items.skills.skill2}</p>
-                    <p className="skill3">{items.skills.skill3}</p>
-                    <p className="skill4">{items.skills.skill4}</p>
-                    <p className="skill5">{items.skills.skill5}</p>
-                    <p className="skill6">{items.skills.skill6}</p>
-                    <p className="skill7">{items.skills.skill7}</p>
-                    <p className="skill8">{items.skills.skill8}</p>
-                    <p className="skill9">{items.skills.skill9}</p>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div>
+                        <img
+                          className="companyLogo"
+                          src={items.image}
+                          alt="nothing"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <span className="position"> {items.position}</span>
+                          <span className="status">
+                            {" "}
+                            <span style={{ marginRight: "15px" }}>|</span>{" "}
+                            {items.status}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="company">{items.company}</span>
+                          <span className="location">{items.location}</span>
+                          <span className="workExperience">
+                            {items.workExperience}
+                          </span>
+                        </p>
+                        <p className="salaryRange">{items.salaryRange}</p>
+                        <p>
+                          <span className="skill1">{items.skills.skill1}</span>
+                          <span className="skill2">{items.skills.skill2}</span>
+                          <span className="skill3">{items.skills.skill3}</span>
+                          <span className="skill4">{items.skills.skill4}</span>
+                          <span className="skill5">{items.skills.skill5}</span>
+                          <br />
+                          <span className="skill6">{items.skills.skill6}</span>
+                          <span className="skill7">{items.skills.skill7}</span>
+                          <span className="skill8">{items.skills.skill8}</span>
+                          <span className="skill9">{items.skills.skill9}</span>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                   </div>
@@ -123,28 +175,45 @@ function JobDescription() {
               <div>
                 {CSS.map((items, id) => (
                   <div key={id}>
-                    <p>
-                      <img src={items.image} alt="nothing" />
-                      <span className="position"> {items.position}</span>
-                      <span className="status">
-                        {" "}
-                        <span style={{ marginRight: "15px" }}>|</span>{" "}
-                        {items.status}
-                      </span>
-                    </p>
-                    <p className="company">{items.company}</p>
-                    <p className="location">{items.location}</p>
-                    <p className="workExperience">{items.workExperience}</p>
-                    <p className="salaryRange">{items.salaryRange}</p>
-                    <p className="skill1">{items.skills.skill1}</p>
-                    <p className="skill2">{items.skills.skill2}</p>
-                    <p className="skill3">{items.skills.skill3}</p>
-                    <p className="skill4">{items.skills.skill4}</p>
-                    <p className="skill5">{items.skills.skill5}</p>
-                    <p className="skill6">{items.skills.skill6}</p>
-                    <p className="skill7">{items.skills.skill7}</p>
-                    <p className="skill8">{items.skills.skill8}</p>
-                    <p className="skill9">{items.skills.skill9}</p>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div>
+                        <img
+                          className="companyLogo"
+                          src={items.image}
+                          alt="nothing"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <span className="position"> {items.position}</span>
+                          <span className="status">
+                            {" "}
+                            <span style={{ marginRight: "15px" }}>|</span>{" "}
+                            {items.status}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="company">{items.company}</span>
+                          <span className="location">{items.location}</span>
+                          <span className="workExperience">
+                            {items.workExperience}
+                          </span>
+                        </p>
+                        <p className="salaryRange">{items.salaryRange}</p>
+                        <p>
+                          <span className="skill1">{items.skills.skill1}</span>
+                          <span className="skill2">{items.skills.skill2}</span>
+                          <span className="skill3">{items.skills.skill3}</span>
+                          <span className="skill4">{items.skills.skill4}</span>
+                          <span className="skill5">{items.skills.skill5}</span>
+                          <br />
+                          <span className="skill6">{items.skills.skill6}</span>
+                          <span className="skill7">{items.skills.skill7}</span>
+                          <span className="skill8">{items.skills.skill8}</span>
+                          <span className="skill9">{items.skills.skill9}</span>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                   </div>
@@ -157,28 +226,45 @@ function JobDescription() {
               <div>
                 {HTML.map((items, id) => (
                   <div key={id}>
-                    <p>
-                      <img src={items.image} alt="nothing" />
-                      <span className="position"> {items.position}</span>
-                      <span className="status">
-                        {" "}
-                        <span style={{ marginRight: "15px" }}>|</span>{" "}
-                        {items.status}
-                      </span>
-                    </p>
-                    <p className="company">{items.company}</p>
-                    <p className="location">{items.location}</p>
-                    <p className="workExperience">{items.workExperience}</p>
-                    <p className="salaryRange">{items.salaryRange}</p>
-                    <p className="skill1">{items.skills.skill1}</p>
-                    <p className="skill2">{items.skills.skill2}</p>
-                    <p className="skill3">{items.skills.skill3}</p>
-                    <p className="skill4">{items.skills.skill4}</p>
-                    <p className="skill5">{items.skills.skill5}</p>
-                    <p className="skill6">{items.skills.skill6}</p>
-                    <p className="skill7">{items.skills.skill7}</p>
-                    <p className="skill8">{items.skills.skill8}</p>
-                    <p className="skill9">{items.skills.skill9}</p>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div>
+                        <img
+                          className="companyLogo"
+                          src={items.image}
+                          alt="nothing"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <span className="position"> {items.position}</span>
+                          <span className="status">
+                            {" "}
+                            <span style={{ marginRight: "15px" }}>|</span>{" "}
+                            {items.status}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="company">{items.company}</span>
+                          <span className="location">{items.location}</span>
+                          <span className="workExperience">
+                            {items.workExperience}
+                          </span>
+                        </p>
+                        <p className="salaryRange">{items.salaryRange}</p>
+                        <p>
+                          <span className="skill1">{items.skills.skill1}</span>
+                          <span className="skill2">{items.skills.skill2}</span>
+                          <span className="skill3">{items.skills.skill3}</span>
+                          <span className="skill4">{items.skills.skill4}</span>
+                          <span className="skill5">{items.skills.skill5}</span>
+                          <br />
+                          <span className="skill6">{items.skills.skill6}</span>
+                          <span className="skill7">{items.skills.skill7}</span>
+                          <span className="skill8">{items.skills.skill8}</span>
+                          <span className="skill9">{items.skills.skill9}</span>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                   </div>
@@ -191,28 +277,45 @@ function JobDescription() {
               <div>
                 {JavaScript.map((items, id) => (
                   <div key={id}>
-                    <p>
-                      <img src={items.image} alt="nothing" />
-                      <span className="position"> {items.position}</span>
-                      <span className="status">
-                        {" "}
-                        <span style={{ marginRight: "15px" }}>|</span>{" "}
-                        {items.status}
-                      </span>
-                    </p>
-                    <p className="company">{items.company}</p>
-                    <p className="location">{items.location}</p>
-                    <p className="workExperience">{items.workExperience}</p>
-                    <p className="salaryRange">{items.salaryRange}</p>
-                    <p className="skill1">{items.skills.skill1}</p>
-                    <p className="skill2">{items.skills.skill2}</p>
-                    <p className="skill3">{items.skills.skill3}</p>
-                    <p className="skill4">{items.skills.skill4}</p>
-                    <p className="skill5">{items.skills.skill5}</p>
-                    <p className="skill6">{items.skills.skill6}</p>
-                    <p className="skill7">{items.skills.skill7}</p>
-                    <p className="skill8">{items.skills.skill8}</p>
-                    <p className="skill9">{items.skills.skill9}</p>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div>
+                        <img
+                          className="companyLogo"
+                          src={items.image}
+                          alt="nothing"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <span className="position"> {items.position}</span>
+                          <span className="status">
+                            {" "}
+                            <span style={{ marginRight: "15px" }}>|</span>{" "}
+                            {items.status}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="company">{items.company}</span>
+                          <span className="location">{items.location}</span>
+                          <span className="workExperience">
+                            {items.workExperience}
+                          </span>
+                        </p>
+                        <p className="salaryRange">{items.salaryRange}</p>
+                        <p>
+                          <span className="skill1">{items.skills.skill1}</span>
+                          <span className="skill2">{items.skills.skill2}</span>
+                          <span className="skill3">{items.skills.skill3}</span>
+                          <span className="skill4">{items.skills.skill4}</span>
+                          <span className="skill5">{items.skills.skill5}</span>
+                          <br />
+                          <span className="skill6">{items.skills.skill6}</span>
+                          <span className="skill7">{items.skills.skill7}</span>
+                          <span className="skill8">{items.skills.skill8}</span>
+                          <span className="skill9">{items.skills.skill9}</span>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                   </div>
@@ -225,28 +328,45 @@ function JobDescription() {
               <div>
                 {ReactJS.map((items, id) => (
                   <div key={id}>
-                    <p>
-                      <img src={items.image} alt="nothing" />
-                      <span className="position"> {items.position}</span>
-                      <span className="status">
-                        {" "}
-                        <span style={{ marginRight: "15px" }}>|</span>{" "}
-                        {items.status}
-                      </span>
-                    </p>
-                    <p className="company">{items.company}</p>
-                    <p className="location">{items.location}</p>
-                    <p className="workExperience">{items.workExperience}</p>
-                    <p className="salaryRange">{items.salaryRange}</p>
-                    <p className="skill1">{items.skills.skill1}</p>
-                    <p className="skill2">{items.skills.skill2}</p>
-                    <p className="skill3">{items.skills.skill3}</p>
-                    <p className="skill4">{items.skills.skill4}</p>
-                    <p className="skill5">{items.skills.skill5}</p>
-                    <p className="skill6">{items.skills.skill6}</p>
-                    <p className="skill7">{items.skills.skill7}</p>
-                    <p className="skill8">{items.skills.skill8}</p>
-                    <p className="skill9">{items.skills.skill9}</p>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div>
+                        <img
+                          className="companyLogo"
+                          src={items.image}
+                          alt="nothing"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <span className="position"> {items.position}</span>
+                          <span className="status">
+                            {" "}
+                            <span style={{ marginRight: "15px" }}>|</span>{" "}
+                            {items.status}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="company">{items.company}</span>
+                          <span className="location">{items.location}</span>
+                          <span className="workExperience">
+                            {items.workExperience}
+                          </span>
+                        </p>
+                        <p className="salaryRange">{items.salaryRange}</p>
+                        <p>
+                          <span className="skill1">{items.skills.skill1}</span>
+                          <span className="skill2">{items.skills.skill2}</span>
+                          <span className="skill3">{items.skills.skill3}</span>
+                          <span className="skill4">{items.skills.skill4}</span>
+                          <span className="skill5">{items.skills.skill5}</span>
+                          <br />
+                          <span className="skill6">{items.skills.skill6}</span>
+                          <span className="skill7">{items.skills.skill7}</span>
+                          <span className="skill8">{items.skills.skill8}</span>
+                          <span className="skill9">{items.skills.skill9}</span>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                   </div>
@@ -259,28 +379,45 @@ function JobDescription() {
               <div>
                 {SoftwareDevelopment.map((items, id) => (
                   <div key={id}>
-                    <p>
-                      <img src={items.image} alt="nothing" />
-                      <span className="position"> {items.position}</span>
-                      <span className="status">
-                        {" "}
-                        <span style={{ marginRight: "15px" }}>|</span>{" "}
-                        {items.status}
-                      </span>
-                    </p>
-                    <p className="company">{items.company}</p>
-                    <p className="location">{items.location}</p>
-                    <p className="workExperience">{items.workExperience}</p>
-                    <p className="salaryRange">{items.salaryRange}</p>
-                    <p className="skill1">{items.skills.skill1}</p>
-                    <p className="skill2">{items.skills.skill2}</p>
-                    <p className="skill3">{items.skills.skill3}</p>
-                    <p className="skill4">{items.skills.skill4}</p>
-                    <p className="skill5">{items.skills.skill5}</p>
-                    <p className="skill6">{items.skills.skill6}</p>
-                    <p className="skill7">{items.skills.skill7}</p>
-                    <p className="skill8">{items.skills.skill8}</p>
-                    <p className="skill9">{items.skills.skill9}</p>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div>
+                        <img
+                          className="companyLogo"
+                          src={items.image}
+                          alt="nothing"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <span className="position"> {items.position}</span>
+                          <span className="status">
+                            {" "}
+                            <span style={{ marginRight: "15px" }}>|</span>{" "}
+                            {items.status}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="company">{items.company}</span>
+                          <span className="location">{items.location}</span>
+                          <span className="workExperience">
+                            {items.workExperience}
+                          </span>
+                        </p>
+                        <p className="salaryRange">{items.salaryRange}</p>
+                        <p>
+                          <span className="skill1">{items.skills.skill1}</span>
+                          <span className="skill2">{items.skills.skill2}</span>
+                          <span className="skill3">{items.skills.skill3}</span>
+                          <span className="skill4">{items.skills.skill4}</span>
+                          <span className="skill5">{items.skills.skill5}</span>
+                          <br />
+                          <span className="skill6">{items.skills.skill6}</span>
+                          <span className="skill7">{items.skills.skill7}</span>
+                          <span className="skill8">{items.skills.skill8}</span>
+                          <span className="skill9">{items.skills.skill9}</span>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                   </div>
@@ -290,7 +427,7 @@ function JobDescription() {
               ""
             )}
           </div>
-          {/* ------------------pasting here the updated */}
+          {/* ------------------pasting here the updated logic */}
         </div>
       ) : (
         <div>
@@ -350,28 +487,45 @@ function JobDescription() {
               <div>
                 {FullStack.map((items, id) => (
                   <div key={id}>
-                    <p>
-                      <img src={items.image} alt="nothing" />
-                      <span className="position"> {items.position}</span>
-                      <span className="status">
-                        {" "}
-                        <span style={{ marginRight: "15px" }}>|</span>{" "}
-                        {items.status}
-                      </span>
-                    </p>
-                    <p className="company">{items.company}</p>
-                    <p className="location">{items.location}</p>
-                    <p className="workExperience">{items.workExperience}</p>
-                    <p className="salaryRange">{items.salaryRange}</p>
-                    <p className="skill1">{items.skills.skill1}</p>
-                    <p className="skill2">{items.skills.skill2}</p>
-                    <p className="skill3">{items.skills.skill3}</p>
-                    <p className="skill4">{items.skills.skill4}</p>
-                    <p className="skill5">{items.skills.skill5}</p>
-                    <p className="skill6">{items.skills.skill6}</p>
-                    <p className="skill7">{items.skills.skill7}</p>
-                    <p className="skill8">{items.skills.skill8}</p>
-                    <p className="skill9">{items.skills.skill9}</p>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div>
+                        <img
+                          className="companyLogo"
+                          src={items.image}
+                          alt="nothing"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <span className="position"> {items.position}</span>
+                          <span className="status">
+                            {" "}
+                            <span style={{ marginRight: "15px" }}>|</span>{" "}
+                            {items.status}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="company">{items.company}</span>
+                          <span className="location">{items.location}</span>
+                          <span className="workExperience">
+                            {items.workExperience}
+                          </span>
+                        </p>
+                        <p className="salaryRange">{items.salaryRange}</p>
+                        <p style={{ marginRight: "30px" }}>
+                          <span className="skill1">{items.skills.skill1}</span>
+                          <span className="skill2">{items.skills.skill2}</span>
+                          <span className="skill3">{items.skills.skill3}</span>
+                          <span className="skill4">{items.skills.skill4}</span>
+                          <span className="skill5">{items.skills.skill5}</span>
+                          <br />
+                          <span className="skill6">{items.skills.skill6}</span>
+                          <span className="skill7">{items.skills.skill7}</span>
+                          <span className="skill8">{items.skills.skill8}</span>
+                          <span className="skill9">{items.skills.skill9}</span>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                   </div>
@@ -386,28 +540,45 @@ function JobDescription() {
               <div>
                 {TechnologyLeaderShip.map((items, id) => (
                   <div key={id}>
-                    <p>
-                      <img src={items.image} alt="nothing" />
-                      <span className="position"> {items.position}</span>
-                      <span className="status">
-                        {" "}
-                        <span style={{ marginRight: "15px" }}>|</span>{" "}
-                        {items.status}
-                      </span>
-                    </p>
-                    <p className="company">{items.company}</p>
-                    <p className="location">{items.location}</p>
-                    <p className="workExperience">{items.workExperience}</p>
-                    <p className="salaryRange">{items.salaryRange}</p>
-                    <p className="skill1">{items.skills.skill1}</p>
-                    <p className="skill2">{items.skills.skill2}</p>
-                    <p className="skill3">{items.skills.skill3}</p>
-                    <p className="skill4">{items.skills.skill4}</p>
-                    <p className="skill5">{items.skills.skill5}</p>
-                    <p className="skill6">{items.skills.skill6}</p>
-                    <p className="skill7">{items.skills.skill7}</p>
-                    <p className="skill8">{items.skills.skill8}</p>
-                    <p className="skill9">{items.skills.skill9}</p>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div>
+                        <img
+                          className="companyLogo"
+                          src={items.image}
+                          alt="nothing"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <span className="position"> {items.position}</span>
+                          <span className="status">
+                            {" "}
+                            <span style={{ marginRight: "15px" }}>|</span>{" "}
+                            {items.status}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="company">{items.company}</span>
+                          <span className="location">{items.location}</span>
+                          <span className="workExperience">
+                            {items.workExperience}
+                          </span>
+                        </p>
+                        <p className="salaryRange">{items.salaryRange}</p>
+                        <p>
+                          <span className="skill1">{items.skills.skill1}</span>
+                          <span className="skill2">{items.skills.skill2}</span>
+                          <span className="skill3">{items.skills.skill3}</span>
+                          <span className="skill4">{items.skills.skill4}</span>
+                          <span className="skill5">{items.skills.skill5}</span>
+                          <br />
+                          <span className="skill6">{items.skills.skill6}</span>
+                          <span className="skill7">{items.skills.skill7}</span>
+                          <span className="skill8">{items.skills.skill8}</span>
+                          <span className="skill9">{items.skills.skill9}</span>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                   </div>
@@ -418,28 +589,45 @@ function JobDescription() {
           <div>
             {BackendDevelopment.map((items, id) => (
               <div key={id}>
-                <p>
-                  <img src={items.image} alt="nothing" />
-                  <span className="position"> {items.position}</span>
-                  <span className="status">
-                    {" "}
-                    <span style={{ marginRight: "15px" }}>|</span>{" "}
-                    {items.status}
-                  </span>
-                </p>
-                <p className="company">{items.company}</p>
-                <p className="location">{items.location}</p>
-                <p className="workExperience">{items.workExperience}</p>
-                <p className="salaryRange">{items.salaryRange}</p>
-                <p className="skill1">{items.skills.skill1}</p>
-                <p className="skill2">{items.skills.skill2}</p>
-                <p className="skill3">{items.skills.skill3}</p>
-                <p className="skill4">{items.skills.skill4}</p>
-                <p className="skill5">{items.skills.skill5}</p>
-                <p className="skill6">{items.skills.skill6}</p>
-                <p className="skill7">{items.skills.skill7}</p>
-                <p className="skill8">{items.skills.skill8}</p>
-                <p className="skill9">{items.skills.skill9}</p>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <div>
+                    <img
+                      className="companyLogo"
+                      src={items.image}
+                      alt="nothing"
+                    />
+                  </div>
+                  <div>
+                    <p>
+                      <span className="position"> {items.position}</span>
+                      <span className="status">
+                        {" "}
+                        <span style={{ marginRight: "15px" }}>|</span>{" "}
+                        {items.status}
+                      </span>
+                    </p>
+                    <p>
+                      <span className="company">{items.company}</span>
+                      <span className="location">{items.location}</span>
+                      <span className="workExperience">
+                        {items.workExperience}
+                      </span>
+                    </p>
+                    <p className="salaryRange">{items.salaryRange}</p>
+                    <p>
+                      <span className="skill1">{items.skills.skill1}</span>
+                      <span className="skill2">{items.skills.skill2}</span>
+                      <span className="skill3">{items.skills.skill3}</span>
+                      <span className="skill4">{items.skills.skill4}</span>
+                      <span className="skill5">{items.skills.skill5}</span>
+                      <br />
+                      <span className="skill6">{items.skills.skill6}</span>
+                      <span className="skill7">{items.skills.skill7}</span>
+                      <span className="skill8">{items.skills.skill8}</span>
+                      <span className="skill9">{items.skills.skill9}</span>
+                    </p>
+                  </div>
+                </div>
                 <br />
                 <br />
               </div>
@@ -448,28 +636,45 @@ function JobDescription() {
           <div>
             {C.map((items, id) => (
               <div key={id}>
-                <p>
-                  <img src={items.image} alt="nothing" />
-                  <span className="position"> {items.position}</span>
-                  <span className="status">
-                    {" "}
-                    <span style={{ marginRight: "15px" }}>|</span>{" "}
-                    {items.status}
-                  </span>
-                </p>
-                <p className="company">{items.company}</p>
-                <p className="location">{items.location}</p>
-                <p className="workExperience">{items.workExperience}</p>
-                <p className="salaryRange">{items.salaryRange}</p>
-                <p className="skill1">{items.skills.skill1}</p>
-                <p className="skill2">{items.skills.skill2}</p>
-                <p className="skill3">{items.skills.skill3}</p>
-                <p className="skill4">{items.skills.skill4}</p>
-                <p className="skill5">{items.skills.skill5}</p>
-                <p className="skill6">{items.skills.skill6}</p>
-                <p className="skill7">{items.skills.skill7}</p>
-                <p className="skill8">{items.skills.skill8}</p>
-                <p className="skill9">{items.skills.skill9}</p>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <div>
+                    <img
+                      className="companyLogo"
+                      src={items.image}
+                      alt="nothing"
+                    />
+                  </div>
+                  <div>
+                    <p>
+                      <span className="position"> {items.position}</span>
+                      <span className="status">
+                        {" "}
+                        <span style={{ marginRight: "15px" }}>|</span>{" "}
+                        {items.status}
+                      </span>
+                    </p>
+                    <p>
+                      <span className="company">{items.company}</span>
+                      <span className="location">{items.location}</span>
+                      <span className="workExperience">
+                        {items.workExperience}
+                      </span>
+                    </p>
+                    <p className="salaryRange">{items.salaryRange}</p>
+                    <p>
+                      <span className="skill1">{items.skills.skill1}</span>
+                      <span className="skill2">{items.skills.skill2}</span>
+                      <span className="skill3">{items.skills.skill3}</span>
+                      <span className="skill4">{items.skills.skill4}</span>
+                      <span className="skill5">{items.skills.skill5}</span>
+                      <br />
+                      <span className="skill6">{items.skills.skill6}</span>
+                      <span className="skill7">{items.skills.skill7}</span>
+                      <span className="skill8">{items.skills.skill8}</span>
+                      <span className="skill9">{items.skills.skill9}</span>
+                    </p>
+                  </div>
+                </div>
                 <br />
                 <br />
               </div>
@@ -478,28 +683,45 @@ function JobDescription() {
           <div>
             {CSharp.map((items, id) => (
               <div key={id}>
-                <p>
-                  <img src={items.image} alt="nothing" />
-                  <span className="position"> {items.position}</span>
-                  <span className="status">
-                    {" "}
-                    <span style={{ marginRight: "15px" }}>|</span>{" "}
-                    {items.status}
-                  </span>
-                </p>
-                <p className="company">{items.company}</p>
-                <p className="location">{items.location}</p>
-                <p className="workExperience">{items.workExperience}</p>
-                <p className="salaryRange">{items.salaryRange}</p>
-                <p className="skill1">{items.skills.skill1}</p>
-                <p className="skill2">{items.skills.skill2}</p>
-                <p className="skill3">{items.skills.skill3}</p>
-                <p className="skill4">{items.skills.skill4}</p>
-                <p className="skill5">{items.skills.skill5}</p>
-                <p className="skill6">{items.skills.skill6}</p>
-                <p className="skill7">{items.skills.skill7}</p>
-                <p className="skill8">{items.skills.skill8}</p>
-                <p className="skill9">{items.skills.skill9}</p>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <div>
+                    <img
+                      className="companyLogo"
+                      src={items.image}
+                      alt="nothing"
+                    />
+                  </div>
+                  <div>
+                    <p>
+                      <span className="position"> {items.position}</span>
+                      <span className="status">
+                        {" "}
+                        <span style={{ marginRight: "15px" }}>|</span>{" "}
+                        {items.status}
+                      </span>
+                    </p>
+                    <p>
+                      <span className="company">{items.company}</span>
+                      <span className="location">{items.location}</span>
+                      <span className="workExperience">
+                        {items.workExperience}
+                      </span>
+                    </p>
+                    <p className="salaryRange">{items.salaryRange}</p>
+                    <p>
+                      <span className="skill1">{items.skills.skill1}</span>
+                      <span className="skill2">{items.skills.skill2}</span>
+                      <span className="skill3">{items.skills.skill3}</span>
+                      <span className="skill4">{items.skills.skill4}</span>
+                      <span className="skill5">{items.skills.skill5}</span>
+                      <br />
+                      <span className="skill6">{items.skills.skill6}</span>
+                      <span className="skill7">{items.skills.skill7}</span>
+                      <span className="skill8">{items.skills.skill8}</span>
+                      <span className="skill9">{items.skills.skill9}</span>
+                    </p>
+                  </div>
+                </div>
                 <br />
                 <br />
               </div>
@@ -508,28 +730,45 @@ function JobDescription() {
           <div>
             {CPlusPlus.map((items, id) => (
               <div key={id}>
-                <p>
-                  <img src={items.image} alt="nothing" />
-                  <span className="position"> {items.position}</span>
-                  <span className="status">
-                    {" "}
-                    <span style={{ marginRight: "15px" }}>|</span>{" "}
-                    {items.status}
-                  </span>
-                </p>
-                <p className="company">{items.company}</p>
-                <p className="location">{items.location}</p>
-                <p className="workExperience">{items.workExperience}</p>
-                <p className="salaryRange">{items.salaryRange}</p>
-                <p className="skill1">{items.skills.skill1}</p>
-                <p className="skill2">{items.skills.skill2}</p>
-                <p className="skill3">{items.skills.skill3}</p>
-                <p className="skill4">{items.skills.skill4}</p>
-                <p className="skill5">{items.skills.skill5}</p>
-                <p className="skill6">{items.skills.skill6}</p>
-                <p className="skill7">{items.skills.skill7}</p>
-                <p className="skill8">{items.skills.skill8}</p>
-                <p className="skill9">{items.skills.skill9}</p>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <div>
+                    <img
+                      className="companyLogo"
+                      src={items.image}
+                      alt="nothing"
+                    />
+                  </div>
+                  <div>
+                    <p>
+                      <span className="position"> {items.position}</span>
+                      <span className="status">
+                        {" "}
+                        <span style={{ marginRight: "15px" }}>|</span>{" "}
+                        {items.status}
+                      </span>
+                    </p>
+                    <p>
+                      <span className="company">{items.company}</span>
+                      <span className="location">{items.location}</span>
+                      <span className="workExperience">
+                        {items.workExperience}
+                      </span>
+                    </p>
+                    <p className="salaryRange">{items.salaryRange}</p>
+                    <p>
+                      <span className="skill1">{items.skills.skill1}</span>
+                      <span className="skill2">{items.skills.skill2}</span>
+                      <span className="skill3">{items.skills.skill3}</span>
+                      <span className="skill4">{items.skills.skill4}</span>
+                      <span className="skill5">{items.skills.skill5}</span>
+                      <br />
+                      <span className="skill6">{items.skills.skill6}</span>
+                      <span className="skill7">{items.skills.skill7}</span>
+                      <span className="skill8">{items.skills.skill8}</span>
+                      <span className="skill9">{items.skills.skill9}</span>
+                    </p>
+                  </div>
+                </div>
                 <br />
                 <br />
               </div>
@@ -542,28 +781,45 @@ function JobDescription() {
               <div>
                 {CSS.map((items, id) => (
                   <div key={id}>
-                    <p>
-                      <img src={items.image} alt="nothing" />
-                      <span className="position"> {items.position}</span>
-                      <span className="status">
-                        {" "}
-                        <span style={{ marginRight: "15px" }}>|</span>{" "}
-                        {items.status}
-                      </span>
-                    </p>
-                    <p className="company">{items.company}</p>
-                    <p className="location">{items.location}</p>
-                    <p className="workExperience">{items.workExperience}</p>
-                    <p className="salaryRange">{items.salaryRange}</p>
-                    <p className="skill1">{items.skills.skill1}</p>
-                    <p className="skill2">{items.skills.skill2}</p>
-                    <p className="skill3">{items.skills.skill3}</p>
-                    <p className="skill4">{items.skills.skill4}</p>
-                    <p className="skill5">{items.skills.skill5}</p>
-                    <p className="skill6">{items.skills.skill6}</p>
-                    <p className="skill7">{items.skills.skill7}</p>
-                    <p className="skill8">{items.skills.skill8}</p>
-                    <p className="skill9">{items.skills.skill9}</p>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div>
+                        <img
+                          className="companyLogo"
+                          src={items.image}
+                          alt="nothing"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <span className="position"> {items.position}</span>
+                          <span className="status">
+                            {" "}
+                            <span style={{ marginRight: "15px" }}>|</span>{" "}
+                            {items.status}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="company">{items.company}</span>
+                          <span className="location">{items.location}</span>
+                          <span className="workExperience">
+                            {items.workExperience}
+                          </span>
+                        </p>
+                        <p className="salaryRange">{items.salaryRange}</p>
+                        <p>
+                          <span className="skill1">{items.skills.skill1}</span>
+                          <span className="skill2">{items.skills.skill2}</span>
+                          <span className="skill3">{items.skills.skill3}</span>
+                          <span className="skill4">{items.skills.skill4}</span>
+                          <span className="skill5">{items.skills.skill5}</span>
+                          <br />
+                          <span className="skill6">{items.skills.skill6}</span>
+                          <span className="skill7">{items.skills.skill7}</span>
+                          <span className="skill8">{items.skills.skill8}</span>
+                          <span className="skill9">{items.skills.skill9}</span>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                   </div>
@@ -578,28 +834,45 @@ function JobDescription() {
               <div>
                 {HTML.map((items, id) => (
                   <div key={id}>
-                    <p>
-                      <img src={items.image} alt="nothing" />
-                      <span className="position"> {items.position}</span>
-                      <span className="status">
-                        {" "}
-                        <span style={{ marginRight: "15px" }}>|</span>{" "}
-                        {items.status}
-                      </span>
-                    </p>
-                    <p className="company">{items.company}</p>
-                    <p className="location">{items.location}</p>
-                    <p className="workExperience">{items.workExperience}</p>
-                    <p className="salaryRange">{items.salaryRange}</p>
-                    <p className="skill1">{items.skills.skill1}</p>
-                    <p className="skill2">{items.skills.skill2}</p>
-                    <p className="skill3">{items.skills.skill3}</p>
-                    <p className="skill4">{items.skills.skill4}</p>
-                    <p className="skill5">{items.skills.skill5}</p>
-                    <p className="skill6">{items.skills.skill6}</p>
-                    <p className="skill7">{items.skills.skill7}</p>
-                    <p className="skill8">{items.skills.skill8}</p>
-                    <p className="skill9">{items.skills.skill9}</p>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div>
+                        <img
+                          className="companyLogo"
+                          src={items.image}
+                          alt="nothing"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <span className="position"> {items.position}</span>
+                          <span className="status">
+                            {" "}
+                            <span style={{ marginRight: "15px" }}>|</span>{" "}
+                            {items.status}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="company">{items.company}</span>
+                          <span className="location">{items.location}</span>
+                          <span className="workExperience">
+                            {items.workExperience}
+                          </span>
+                        </p>
+                        <p className="salaryRange">{items.salaryRange}</p>
+                        <p>
+                          <span className="skill1">{items.skills.skill1}</span>
+                          <span className="skill2">{items.skills.skill2}</span>
+                          <span className="skill3">{items.skills.skill3}</span>
+                          <span className="skill4">{items.skills.skill4}</span>
+                          <span className="skill5">{items.skills.skill5}</span>
+                          <br />
+                          <span className="skill6">{items.skills.skill6}</span>
+                          <span className="skill7">{items.skills.skill7}</span>
+                          <span className="skill8">{items.skills.skill8}</span>
+                          <span className="skill9">{items.skills.skill9}</span>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                   </div>
@@ -614,28 +887,45 @@ function JobDescription() {
               <div>
                 {JavaScript.map((items, id) => (
                   <div key={id}>
-                    <p>
-                      <img src={items.image} alt="nothing" />
-                      <span className="position"> {items.position}</span>
-                      <span className="status">
-                        {" "}
-                        <span style={{ marginRight: "15px" }}>|</span>{" "}
-                        {items.status}
-                      </span>
-                    </p>
-                    <p className="company">{items.company}</p>
-                    <p className="location">{items.location}</p>
-                    <p className="workExperience">{items.workExperience}</p>
-                    <p className="salaryRange">{items.salaryRange}</p>
-                    <p className="skill1">{items.skills.skill1}</p>
-                    <p className="skill2">{items.skills.skill2}</p>
-                    <p className="skill3">{items.skills.skill3}</p>
-                    <p className="skill4">{items.skills.skill4}</p>
-                    <p className="skill5">{items.skills.skill5}</p>
-                    <p className="skill6">{items.skills.skill6}</p>
-                    <p className="skill7">{items.skills.skill7}</p>
-                    <p className="skill8">{items.skills.skill8}</p>
-                    <p className="skill9">{items.skills.skill9}</p>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div>
+                        <img
+                          className="companyLogo"
+                          src={items.image}
+                          alt="nothing"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <span className="position"> {items.position}</span>
+                          <span className="status">
+                            {" "}
+                            <span style={{ marginRight: "15px" }}>|</span>{" "}
+                            {items.status}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="company">{items.company}</span>
+                          <span className="location">{items.location}</span>
+                          <span className="workExperience">
+                            {items.workExperience}
+                          </span>
+                        </p>
+                        <p className="salaryRange">{items.salaryRange}</p>
+                        <p>
+                          <span className="skill1">{items.skills.skill1}</span>
+                          <span className="skill2">{items.skills.skill2}</span>
+                          <span className="skill3">{items.skills.skill3}</span>
+                          <span className="skill4">{items.skills.skill4}</span>
+                          <span className="skill5">{items.skills.skill5}</span>
+                          <br />
+                          <span className="skill6">{items.skills.skill6}</span>
+                          <span className="skill7">{items.skills.skill7}</span>
+                          <span className="skill8">{items.skills.skill8}</span>
+                          <span className="skill9">{items.skills.skill9}</span>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                   </div>
@@ -646,28 +936,45 @@ function JobDescription() {
           <div>
             {NodeJS.map((items, id) => (
               <div key={id}>
-                <p>
-                  <img src={items.image} alt="nothing" />
-                  <span className="position"> {items.position}</span>
-                  <span className="status">
-                    {" "}
-                    <span style={{ marginRight: "15px" }}>|</span>{" "}
-                    {items.status}
-                  </span>
-                </p>
-                <p className="company">{items.company}</p>
-                <p className="location">{items.location}</p>
-                <p className="workExperience">{items.workExperience}</p>
-                <p className="salaryRange">{items.salaryRange}</p>
-                <p className="skill1">{items.skills.skill1}</p>
-                <p className="skill2">{items.skills.skill2}</p>
-                <p className="skill3">{items.skills.skill3}</p>
-                <p className="skill4">{items.skills.skill4}</p>
-                <p className="skill5">{items.skills.skill5}</p>
-                <p className="skill6">{items.skills.skill6}</p>
-                <p className="skill7">{items.skills.skill7}</p>
-                <p className="skill8">{items.skills.skill8}</p>
-                <p className="skill9">{items.skills.skill9}</p>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <div>
+                    <img
+                      className="companyLogo"
+                      src={items.image}
+                      alt="nothing"
+                    />
+                  </div>
+                  <div>
+                    <p>
+                      <span className="position"> {items.position}</span>
+                      <span className="status">
+                        {" "}
+                        <span style={{ marginRight: "15px" }}>|</span>{" "}
+                        {items.status}
+                      </span>
+                    </p>
+                    <p>
+                      <span className="company">{items.company}</span>
+                      <span className="location">{items.location}</span>
+                      <span className="workExperience">
+                        {items.workExperience}
+                      </span>
+                    </p>
+                    <p className="salaryRange">{items.salaryRange}</p>
+                    <p>
+                      <span className="skill1">{items.skills.skill1}</span>
+                      <span className="skill2">{items.skills.skill2}</span>
+                      <span className="skill3">{items.skills.skill3}</span>
+                      <span className="skill4">{items.skills.skill4}</span>
+                      <span className="skill5">{items.skills.skill5}</span>
+                      <br />
+                      <span className="skill6">{items.skills.skill6}</span>
+                      <span className="skill7">{items.skills.skill7}</span>
+                      <span className="skill8">{items.skills.skill8}</span>
+                      <span className="skill9">{items.skills.skill9}</span>
+                    </p>
+                  </div>
+                </div>
                 <br />
                 <br />
               </div>
@@ -680,28 +987,45 @@ function JobDescription() {
               <div>
                 {ReactJS.map((items, id) => (
                   <div key={id}>
-                    <p>
-                      <img src={items.image} alt="nothing" />
-                      <span className="position"> {items.position}</span>
-                      <span className="status">
-                        {" "}
-                        <span style={{ marginRight: "15px" }}>|</span>{" "}
-                        {items.status}
-                      </span>
-                    </p>
-                    <p className="company">{items.company}</p>
-                    <p className="location">{items.location}</p>
-                    <p className="workExperience">{items.workExperience}</p>
-                    <p className="salaryRange">{items.salaryRange}</p>
-                    <p className="skill1">{items.skills.skill1}</p>
-                    <p className="skill2">{items.skills.skill2}</p>
-                    <p className="skill3">{items.skills.skill3}</p>
-                    <p className="skill4">{items.skills.skill4}</p>
-                    <p className="skill5">{items.skills.skill5}</p>
-                    <p className="skill6">{items.skills.skill6}</p>
-                    <p className="skill7">{items.skills.skill7}</p>
-                    <p className="skill8">{items.skills.skill8}</p>
-                    <p className="skill9">{items.skills.skill9}</p>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div>
+                        <img
+                          className="companyLogo"
+                          src={items.image}
+                          alt="nothing"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <span className="position"> {items.position}</span>
+                          <span className="status">
+                            {" "}
+                            <span style={{ marginRight: "15px" }}>|</span>{" "}
+                            {items.status}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="company">{items.company}</span>
+                          <span className="location">{items.location}</span>
+                          <span className="workExperience">
+                            {items.workExperience}
+                          </span>
+                        </p>
+                        <p className="salaryRange">{items.salaryRange}</p>
+                        <p>
+                          <span className="skill1">{items.skills.skill1}</span>
+                          <span className="skill2">{items.skills.skill2}</span>
+                          <span className="skill3">{items.skills.skill3}</span>
+                          <span className="skill4">{items.skills.skill4}</span>
+                          <span className="skill5">{items.skills.skill5}</span>
+                          <br />
+                          <span className="skill6">{items.skills.skill6}</span>
+                          <span className="skill7">{items.skills.skill7}</span>
+                          <span className="skill8">{items.skills.skill8}</span>
+                          <span className="skill9">{items.skills.skill9}</span>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                   </div>
@@ -716,28 +1040,45 @@ function JobDescription() {
               <div>
                 {SoftwareDevelopment.map((items, id) => (
                   <div key={id}>
-                    <p>
-                      <img src={items.image} alt="nothing" />
-                      <span className="position"> {items.position}</span>
-                      <span className="status">
-                        {" "}
-                        <span style={{ marginRight: "15px" }}>|</span>{" "}
-                        {items.status}
-                      </span>
-                    </p>
-                    <p className="company">{items.company}</p>
-                    <p className="location">{items.location}</p>
-                    <p className="workExperience">{items.workExperience}</p>
-                    <p className="salaryRange">{items.salaryRange}</p>
-                    <p className="skill1">{items.skills.skill1}</p>
-                    <p className="skill2">{items.skills.skill2}</p>
-                    <p className="skill3">{items.skills.skill3}</p>
-                    <p className="skill4">{items.skills.skill4}</p>
-                    <p className="skill5">{items.skills.skill5}</p>
-                    <p className="skill6">{items.skills.skill6}</p>
-                    <p className="skill7">{items.skills.skill7}</p>
-                    <p className="skill8">{items.skills.skill8}</p>
-                    <p className="skill9">{items.skills.skill9}</p>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div>
+                        <img
+                          className="companyLogo"
+                          src={items.image}
+                          alt="nothing"
+                        />
+                      </div>
+                      <div>
+                        <p>
+                          <span className="position"> {items.position}</span>
+                          <span className="status">
+                            {" "}
+                            <span style={{ marginRight: "15px" }}>|</span>{" "}
+                            {items.status}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="company">{items.company}</span>
+                          <span className="location">{items.location}</span>
+                          <span className="workExperience">
+                            {items.workExperience}
+                          </span>
+                        </p>
+                        <p className="salaryRange">{items.salaryRange}</p>
+                        <p>
+                          <span className="skill1">{items.skills.skill1}</span>
+                          <span className="skill2">{items.skills.skill2}</span>
+                          <span className="skill3">{items.skills.skill3}</span>
+                          <span className="skill4">{items.skills.skill4}</span>
+                          <span className="skill5">{items.skills.skill5}</span>
+                          <br />
+                          <span className="skill6">{items.skills.skill6}</span>
+                          <span className="skill7">{items.skills.skill7}</span>
+                          <span className="skill8">{items.skills.skill8}</span>
+                          <span className="skill9">{items.skills.skill9}</span>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                   </div>
@@ -748,28 +1089,45 @@ function JobDescription() {
           <div>
             {WebDevelopment.map((items, id) => (
               <div key={id}>
-                <p>
-                  <img src={items.image} alt="nothing" />
-                  <span className="position"> {items.position}</span>
-                  <span className="status">
-                    {" "}
-                    <span style={{ marginRight: "15px" }}>|</span>{" "}
-                    {items.status}
-                  </span>
-                </p>
-                <p className="company">{items.company}</p>
-                <p className="location">{items.location}</p>
-                <p className="workExperience">{items.workExperience}</p>
-                <p className="salaryRange">{items.salaryRange}</p>
-                <p className="skill1">{items.skills.skill1}</p>
-                <p className="skill2">{items.skills.skill2}</p>
-                <p className="skill3">{items.skills.skill3}</p>
-                <p className="skill4">{items.skills.skill4}</p>
-                <p className="skill5">{items.skills.skill5}</p>
-                <p className="skill6">{items.skills.skill6}</p>
-                <p className="skill7">{items.skills.skill7}</p>
-                <p className="skill8">{items.skills.skill8}</p>
-                <p className="skill9">{items.skills.skill9}</p>
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  <div>
+                    <img
+                      className="companyLogo"
+                      src={items.image}
+                      alt="nothing"
+                    />
+                  </div>
+                  <div>
+                    <p>
+                      <span className="position"> {items.position}</span>
+                      <span className="status">
+                        {" "}
+                        <span style={{ marginRight: "15px" }}>|</span>{" "}
+                        {items.status}
+                      </span>
+                    </p>
+                    <p>
+                      <span className="company">{items.company}</span>
+                      <span className="location">{items.location}</span>
+                      <span className="workExperience">
+                        {items.workExperience}
+                      </span>
+                    </p>
+                    <p className="salaryRange">{items.salaryRange}</p>
+                    <p>
+                      <span className="skill1">{items.skills.skill1}</span>
+                      <span className="skill2">{items.skills.skill2}</span>
+                      <span className="skill3">{items.skills.skill3}</span>
+                      <span className="skill4">{items.skills.skill4}</span>
+                      <span className="skill5">{items.skills.skill5}</span>
+                      <br />
+                      <span className="skill6">{items.skills.skill6}</span>
+                      <span className="skill7">{items.skills.skill7}</span>
+                      <span className="skill8">{items.skills.skill8}</span>
+                      <span className="skill9">{items.skills.skill9}</span>
+                    </p>
+                  </div>
+                </div>
                 <br />
                 <br />
               </div>

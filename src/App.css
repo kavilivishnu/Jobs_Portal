@@ -13,13 +13,34 @@
   font-size: 18px;
 }
 
+.companyLogo {
+  height: 105px;
+  width: 120px;
+  /* margin-left: -20%; */
+  margin-right: 40px;
+}
+
+.company {
+  margin-right: 40px;
+  color: rgb(167, 166, 166);
+  font-size: 18px;
+}
+
 .location {
+  margin-right: 40px;
+  color: rgb(167, 166, 166);
+  font-size: 18px;
 }
 
 .workExperience {
+  color: rgb(167, 166, 166);
+  font-size: 18px;
 }
 
 .salaryRange {
+  font-size: 18px;
+  color: dodgerblue;
+  font-weight: 700;
 }
 
 .skill1 {
