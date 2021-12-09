@@ -1,4 +1,4 @@
-You can view the App here: https://jobifie.netlify.app/
+You can view the App here: https://jobifie.netlify.app/ 
 
 # Getting Started with Create React App
 
