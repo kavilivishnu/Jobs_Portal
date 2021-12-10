@@ -14,6 +14,7 @@ export const TOGGLE_JAVASCRIPT = "TOGGLE_JAVASCRIPT";
 export const TOGGLE_REACT_JS = "TOGGLE_REACT_JS";
 export const TOGGLE_NODE_JS = "TOGGLE_NODE_JS";
 export const SET_FRONTEND_TO_FALSE = "SET_FRONT_TO_FALSE";
+export const CLEAR_ALL_SKILLS = "CLEAR_ALL_SKILLS";
 
 // export function toggleFrontend(status) {
 //   return {
@@ -103,5 +104,11 @@ export function toggleNodetJS() {
 export function setFrontEndToFalse() {
   return {
     type: SET_FRONTEND_TO_FALSE,
+  };
+}
+
+export function clearAllSkills() {
+  return {
+    type: CLEAR_ALL_SKILLS,
   };
 }
