@@ -86,7 +86,7 @@
   },
   {
     "id": 5,
-    "image" : "https://assets.landing.jobs/attachments/companies/logos/da0aa42d9743dc0d03c7cfa9427d2208180759f9/small.png?1613402158",
+    "image": "https://assets.landing.jobs/attachments/companies/logos/da0aa42d9743dc0d03c7cfa9427d2208180759f9/small.png?1613402158",
     "position": "Product Back-end Developer (Junior)",
     "status": "Permanent",
     "company": "Cloudoki",
@@ -94,11 +94,10 @@
     "workExperience": "At least 1 years of experience - Intermediate",
     "salaryRange": "",
     "skills": {
-      "skill1": "",
       "skill2": "Backend Development",
       "skill3": "Continuous Integration",
-      "skill4": "Behavious-Driven Development",
-      "skill5": "Mongo DB"
+      "skill4": "Mongo DB",
+      "skill5": "Java"
     }
   },
   {
@@ -128,8 +127,7 @@
     "workExperience": "At least 5 years of experience - Senior",
     "salaryRange": "",
     "skills": {
-      "skill1": "API",
-      "skill2": "",
+      "skill2": "Mongo DB",
       "skill3": "Software Enigeering",
       "skill4": "SQL Server",
       "skill5": "Node"

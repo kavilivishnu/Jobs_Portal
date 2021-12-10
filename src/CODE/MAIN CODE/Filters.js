@@ -17,6 +17,7 @@ import {
   toggleReactJS,
   toggleNodetJS,
   setFrontEndToFalse,
+  showSkills,
 } from "../Actions";
 
 function Filters() {
@@ -25,10 +26,10 @@ function Filters() {
   const globalState = useSelector((state) => state);
   const dispatch = useDispatch();
 
-  const [input, setInput] = useState([]);
   const [mainDisplay, setMainDisplay] = useState(false);
   const [displayFrontEnd, setDisplayFrontEnd] = useState(false);
-  const [disable, setDisable] = useState(false);
+  const [showSkillBar, setShowSkillBar] = useState(false);
+  const [showJobDescriptionBar, setShowJobDescriptionBar] = useState(false);
 
   // const [frontEndView, setFrontEndView] = useState(false);
 
@@ -48,8 +49,12 @@ function Filters() {
   ];
 
   useEffect(() => {
-    inputRef.current.focus();
-  }, []);
+    if (showSkillBar) {
+      inputRef.current.focus();
+    } else {
+      return null;
+    }
+  }, [showSkillBar]);
 
   const handleClick = () => {
     let frontEndDevelopment;
@@ -57,7 +62,7 @@ function Filters() {
     if (inputRef.current.props.value === null) {
       alert("Please enter a SKILL to proceed.");
     } else {
-      setInput(inputRef.current.props.value);
+      dispatch(showSkills(inputRef.current.props.value));
       frontEndDevelopment = inputRef.current.props.value.some(
         (item) => item.value === "Frontend Development"
       );
@@ -125,44 +130,285 @@ function Filters() {
     }
   };
 
+  const customStyles = {
+    control: (styles) => ({
+      ...styles,
+      width: 250,
+    }),
+  };
+
   return (
-    <div style={{ marginLeft: "5%", marginRight: "17%" }}>
-      <div>
-        <h4>Skills</h4>
-        <p>{globalState.front}</p>
-        <Select ref={inputRef} isMulti options={skills} />
-        <br />
-        <button onClick={(e) => handleClick(e)}>Show Results</button>
-        <br />
-        <h5>With any skills:</h5>
-        {input.map((item, id) => (
-          <div key={id}>
-            <h4>
-              <i>
-                <u>
-                  <b>{item.value}</b>
-                </u>
-              </i>
-            </h4>
-          </div>
-        ))}
-      </div>
-      <div>
-        <h4>Job Category</h4>
-        {mainDisplay ? (
+    // <div className="leftMostSection">
+    <div style={{ marginTop: "5%" }}>
+      <div style={{ marginLeft: "-15%" }}>
+        {/* <div> */}
+        <div style={{ marginLeft: "30%" }}>
+          {/* <div> */}
           <div>
-            {displayFrontEnd ? (
-              <div style={{ display: "flex", flexDirection: "column" }}>
+            <h4 style={{ color: "rgb(167, 166, 166)" }}>Skills </h4>
+            <div className="skillToggle">
+              <button
+                className="toggleButton"
+                onClick={() => setShowSkillBar(!showSkillBar)}
+              >
+                {showSkillBar ? (
+                  <span
+                    style={{
+                      cursor: "pointer",
+                      fontWeight: "bolder",
+                      fontSize: "18px",
+                    }}
+                  >
+                    -
+                  </span>
+                ) : (
+                  <span
+                    style={{
+                      cursor: "pointer",
+                      fontWeight: "bolder",
+                      fontSize: "18px",
+                    }}
+                  >
+                    +
+                  </span>
+                )}
+              </button>{" "}
+            </div>
+            <br />
+          </div>
+          {/* <p>{globalState.front}</p> */}
+          {showSkillBar ? (
+            <div>
+              <Select
+                styles={customStyles}
+                ref={inputRef}
+                isMulti
+                options={skills}
+              />
+              <br />
+              <button onClick={(e) => handleClick(e)}>Show Results</button>
+            </div>
+          ) : (
+            <div style={{ opacity: "0" }}>
+              <Select
+                styles={customStyles}
+                ref={inputRef}
+                isMulti
+                options={skills}
+              />
+              <br />
+              <button onClick={(e) => handleClick(e)}>Show Results</button>
+            </div>
+          )}
+          <br />
+          <br />
+          <div>
+            <h4 style={{ color: "rgb(167, 166, 166)" }}>Job Category</h4>
+            <div className="jobToggle">
+              <button
+                className="toggleButton"
+                onClick={() => setShowJobDescriptionBar(!showJobDescriptionBar)}
+              >
+                {showJobDescriptionBar ? (
+                  <span
+                    style={{
+                      cursor: "pointer",
+                      fontWeight: "bolder",
+                      fontSize: "18px",
+                    }}
+                  >
+                    -
+                  </span>
+                ) : (
+                  <span
+                    style={{
+                      cursor: "pointer",
+                      fontWeight: "bolder",
+                      fontSize: "18px",
+                    }}
+                  >
+                    +
+                  </span>
+                )}
+              </button>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+      {/* <div style={{ marginLeft: "20%" }}> */}
+      <div style={{ marginLeft: "20%" }}>
+        {showJobDescriptionBar ? (
+          <div>
+            {mainDisplay ? (
+              <div>
+                {displayFrontEnd ? (
+                  <div className="allcontents2">
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("full")}
+                      />{" "}
+                      <label>Full-stack Developer(4)</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("tech")}
+                      />{" "}
+                      <label>Technology Leadership (4)</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("cSS")}
+                      />
+                      <label>CSS Development</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("hTML")}
+                      />
+                      <label>HTML Development</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("javaScript")}
+                      />
+                      <label>JavaScript Development</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("reactJS")}
+                      />
+                      <label>ReactJS Development</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("soft")}
+                      />
+                      <label>Software Development</label>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="allContents1">
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("back")}
+                        // onClick={(e) => handleCheck(e)}
+                      />
+                      <label> Backend Development</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("cLanguage")}
+                      />
+                      <label>C Development</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("cSharp")}
+                      />
+                      <label>C# Development</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("cPlusPlus")}
+                      />
+                      <label>C++ Development</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("cSS")}
+                      />
+                      <label>CSS Development</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("hTML")}
+                      />
+                      <label>HTML Development</label>
+                    </div>
+                    <div></div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("javaScript")}
+                      />
+                      <label>JavaScript Development</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("nodeJs")}
+                      />
+                      <label>NodeJS Development</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("reactJS")}
+                      />
+                      <label>ReactJS Development</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("soft")}
+                      />
+                      <label>Software Development</label>
+                    </div>
+                    <div className="wrap">
+                      <input
+                        type="checkbox"
+                        onClick={() => handleToggle("web")}
+                      />
+                      <label>Web Development</label>
+                    </div>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div className="allContents">
                 <div className="wrap">
-                  <input type="checkbox" onClick={() => handleToggle("full")} />{" "}
+                  <input
+                    type="checkbox"
+                    onClick={() => handleToggle("front")}
+                  />{" "}
+                  <label> Front-end Developer(7) </label>
+                </div>
+                <div className="wrap">
+                  <input
+                    type="checkbox"
+                    // onClick={() => dispatch(toggleFullStack())}
+                    onClick={() => handleToggle("full")}
+                  />{" "}
                   <label>Full-stack Developer(4)</label>
                 </div>
                 <div className="wrap">
-                  <input type="checkbox" onClick={() => handleToggle("tech")} />{" "}
+                  <input
+                    type="checkbox"
+                    // onClick={() => dispatch(toggleTechnology())}
+                    onClick={() => handleToggle("tech")}
+                  />{" "}
                   <label>Technology Leadership (4)</label>
                 </div>
                 <div className="wrap">
-                  <input type="checkbox" onClick={() => handleToggle("cSS")} />
+                  <input
+                    type="checkbox"
+                    // onClick={() => dispatch(toggleCSs())}
+                    onClick={() => handleToggle("cSS")}
+                  />
                   <label>CSS Development</label>
                 </div>
                 <div className="wrap">
@@ -187,20 +433,11 @@ function Filters() {
                   <input type="checkbox" onClick={() => handleToggle("soft")} />
                   <label>Software Development</label>
                 </div>
-              </div>
-            ) : (
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  marginLeft: "-5%",
-                }}
-              >
                 <div className="wrap">
                   <input
                     type="checkbox"
+                    // onClick={() => dispatch(toggleFrontend(0))}
                     onClick={() => handleToggle("back")}
-                    // onClick={(e) => handleCheck(e)}
                   />
                   <label> Backend Development</label>
                 </div>
@@ -226,38 +463,11 @@ function Filters() {
                   <label>C++ Development</label>
                 </div>
                 <div className="wrap">
-                  <input type="checkbox" onClick={() => handleToggle("cSS")} />
-                  <label>CSS Development</label>
-                </div>
-                <div className="wrap">
-                  <input type="checkbox" onClick={() => handleToggle("hTML")} />
-                  <label>HTML Development</label>
-                </div>
-                <div></div>
-                <div className="wrap">
-                  <input
-                    type="checkbox"
-                    onClick={() => handleToggle("javaScript")}
-                  />
-                  <label>JavaScript Development</label>
-                </div>
-                <div className="wrap">
                   <input
                     type="checkbox"
                     onClick={() => handleToggle("nodeJs")}
                   />
                   <label>NodeJS Development</label>
-                </div>
-                <div className="wrap">
-                  <input
-                    type="checkbox"
-                    onClick={() => handleToggle("reactJS")}
-                  />
-                  <label>ReactJS Development</label>
-                </div>
-                <div className="wrap">
-                  <input type="checkbox" onClick={() => handleToggle("soft")} />
-                  <label>Software Development</label>
                 </div>
                 <div className="wrap">
                   <input type="checkbox" onClick={() => handleToggle("web")} />
@@ -267,101 +477,7 @@ function Filters() {
             )}
           </div>
         ) : (
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              marginLeft: "-15%",
-            }}
-          >
-            <div className="wrap">
-              <input
-                type="checkbox"
-                // onClick={() => dispatch(toggleFrontend(!show))}
-                // onClick={(e) => handleCheck(e)}
-                // onClick={() => dispatch(toggleFrontend())}
-                onClick={() => handleToggle("front")}
-              />{" "}
-              <label> Front-end Developer(7) </label>
-            </div>
-            <div className="wrap">
-              <input
-                type="checkbox"
-                // onClick={() => dispatch(toggleFullStack())}
-                onClick={() => handleToggle("full")}
-              />{" "}
-              <label>Full-stack Developer(4)</label>
-            </div>
-            <div className="wrap">
-              <input
-                type="checkbox"
-                // onClick={() => dispatch(toggleTechnology())}
-                onClick={() => handleToggle("tech")}
-              />{" "}
-              <label>Technology Leadership (4)</label>
-            </div>
-            <div className="wrap">
-              <input
-                type="checkbox"
-                // onClick={() => dispatch(toggleCSs())}
-                onClick={() => handleToggle("cSS")}
-              />
-              <label>CSS Development</label>
-            </div>
-            <div className="wrap">
-              <input type="checkbox" onClick={() => handleToggle("hTML")} />
-              <label>HTML Development</label>
-            </div>
-            <div className="wrap">
-              <input
-                type="checkbox"
-                onClick={() => handleToggle("javaScript")}
-              />
-              <label>JavaScript Development</label>
-            </div>
-            <div className="wrap">
-              <input type="checkbox" onClick={() => handleToggle("reactJS")} />
-              <label>ReactJS Development</label>
-            </div>
-            <div className="wrap">
-              <input type="checkbox" onClick={() => handleToggle("soft")} />
-              <label>Software Development</label>
-            </div>
-            <div className="wrap">
-              <input
-                type="checkbox"
-                // onClick={() => dispatch(toggleFrontend(0))}
-                onClick={() => handleToggle("back")}
-              />
-              <label> Backend Development</label>
-            </div>
-            <div className="wrap">
-              <input
-                type="checkbox"
-                onClick={() => handleToggle("cLanguage")}
-              />
-              <label>C Development</label>
-            </div>
-            <div className="wrap">
-              <input type="checkbox" onClick={() => handleToggle("cSharp")} />
-              <label>C# Development</label>
-            </div>
-            <div className="wrap">
-              <input
-                type="checkbox"
-                onClick={() => handleToggle("cPlusPlus")}
-              />
-              <label>C++ Development</label>
-            </div>
-            <div className="wrap">
-              <input type="checkbox" onClick={() => handleToggle("nodeJs")} />
-              <label>NodeJS Development</label>
-            </div>
-            <div className="wrap">
-              <input type="checkbox" onClick={() => handleToggle("web")} />
-              <label>Web Development</label>
-            </div>
-          </div>
+          ""
         )}
       </div>
     </div>

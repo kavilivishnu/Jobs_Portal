@@ -20,6 +20,15 @@ function JobDescription() {
 
   return (
     <div style={{ marginTop: "5%" }}>
+      <div className="skillSet">
+        <h3 style={{ marginRight: "10px" }}>With any skills:</h3>
+        {globalState.skillSet.map((item, id) => (
+          <div key={id} className="selectedSkills">
+            <span>{item.value},</span>
+          </div>
+        ))}
+      </div>
+
       {globalState.front ? (
         <div>
           {FrontendDev.map((items, id) => (

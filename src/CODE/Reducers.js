@@ -14,6 +14,7 @@ import {
   TOGGLE_REACT_JS,
   TOGGLE_NODE_JS,
   SET_FRONTEND_TO_FALSE,
+  SHOW_SKILLS
 } from "./Actions";
 
 export const job = {
@@ -32,11 +33,17 @@ export const job = {
   reactjs: false,
   nodejs: false,
   toggleRemaining: false,
+  skillSet: []
 };
 
 export const Reducers = (state = job, action) => {
   let status;
   switch (action.type) {
+    case SHOW_SKILLS:
+      return {
+        ...state,
+        skillSet: action.skills
+      }
     case TOGGLE_FRONTEND:
       const toggleTheFront = state.front;
       return {

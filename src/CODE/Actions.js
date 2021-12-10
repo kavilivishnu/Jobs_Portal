@@ -1,3 +1,4 @@
+export const SHOW_SKILLS = "SHOW_SKILLS";
 export const TOGGLE_FRONTEND = "TOGGLE_FRONTEND";
 export const TOGGLE_FULLSTACKDEV = "TOGGLE_FULLSTACKDEV";
 export const TOGGLE_TECHNOLOGY = "TOGGLE_TECHNOLOGY";
@@ -20,6 +21,13 @@ export const SET_FRONTEND_TO_FALSE = "SET_FRONT_TO_FALSE";
 //     status: status,
 //   };
 // }
+
+export function showSkills(skills) {
+  return {
+    type: SHOW_SKILLS,
+    skills: skills,
+  };
+}
 
 export function toggleFrontend() {
   return {
@@ -94,6 +102,6 @@ export function toggleNodetJS() {
 
 export function setFrontEndToFalse() {
   return {
-    type: SET_FRONTEND_TO_FALSE 
-  }
+    type: SET_FRONTEND_TO_FALSE,
+  };
 }
